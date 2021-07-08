@@ -20,7 +20,7 @@ router.post("/register", validInfo, async(req, res) => {
         [email]);
 
         if(user.rows.length !== 0) {
-            return res.status(401).send("User already exist!");
+            return res.status(401).json("User already exist!");
         }
 
         //3.Bcrypt the user password
@@ -62,14 +62,14 @@ router.post("/login", validInfo, async (req, res) => {
         const user = await pool.query("SELECT * FROM users WHERE user_email = $1", [email]);
 
         if (user.rows.length === 0) {
-            return res.status(401).send("Password or Email is incorrect");
+            return res.status(401).json("Password or Email is incorrect");
         }
 
         //3. check if incoming password is the same the database password
 
         const validPassword = await bcrypt.compare(password, user.rows[0].user_password);
 
-        console.log(validPassword);
+        // console.log(validPassword);
         if (!validPassword) {
             return res.status(401).json("Password or Email is incorrect");
         }
