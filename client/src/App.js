@@ -20,6 +20,7 @@ import Dashboard from './components/Dashboard';
 import Login from './components/Login';
 import Register from './components/Register';
 import EditProfile from './components/EditProfile';
+import ResetPassword from './components/ResetPassword';
 
 
 toast.configure();
@@ -63,6 +64,7 @@ function App() {
             <Route exact path = "/register" render={props => !isAuthenticated ? <Register {...props} setAuth={setAuth} /> : <Redirect to="/dashboard"/> }/>
             <Route exact path = "/dashboard" render={props => isAuthenticated ? <Dashboard {...props} setAuth={setAuth} /> : <Redirect to="/login"/> }/> 
             <Route exact path = "/editProfile" render={props => isAuthenticated ? <EditProfile {...props} setAuth={setAuth} /> : <Redirect to="/login"/> }/> 
+            <Route exact path = "/reset-password" render={props => isAuthenticated ? <ResetPassword {...props} setAuth={setAuth} /> : <Redirect to="/login"/>}/> 
           </Switch>
         </div>
       </Router>

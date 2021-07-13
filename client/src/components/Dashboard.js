@@ -18,7 +18,8 @@ const Dashboard = ({setAuth}) => {
 
             console.log(parseRes); //userName
 
-            setName(parseRes.user_name)
+            setName(parseRes.user_name);
+
 
 
             
@@ -33,9 +34,8 @@ const Dashboard = ({setAuth}) => {
         setAuth(false);
 
         toast.success("Logged out successfully!");
-    }
+    };
 
-    
 
     useEffect(() => {
         getName();
@@ -44,7 +44,8 @@ const Dashboard = ({setAuth}) => {
     return (
     <Fragment>
         <h1>Dashboard { name } </h1>
-        <Link to="/editProfile" clasaName="btn btn-primary">Edit Profile</Link>
+        <Link to="/editProfile" clasaName="btn btn-primary">Edit Profile</Link>&nbsp; &nbsp;
+        <Link to="/reset-password" clasaName="btn btn-primary">Reset Password</Link>&nbsp; &nbsp;
         <button className="btn btn-primary" onClick={e => logout(e)}>Logout</button>
     </Fragment>
     );

@@ -1,4 +1,4 @@
-import React, { Component, Fragment, useState } from "react";
+import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import { toast } from 'react-toastify';
 
@@ -29,7 +29,7 @@ const Login = ({setAuth}) => {
           
           console.log(response);
           const parseRes = await response.json();
-            console.log(parseRes.token);
+            // console.log(parseRes.token);
 
           // localStorage.setItem("token", parseRes.token);
           // setAuth(true);

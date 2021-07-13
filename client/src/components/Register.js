@@ -38,8 +38,8 @@ const onSubmitForm = async e => {
 
         const parseRes = await response.json();
 
-        localStorage.setItem("token", parseRes.token);
-        setAuth(true);
+        // localStorage.setItem("token", parseRes.token);
+        // setAuth(true);
 
         if (parseRes.token) {
             localStorage.setItem("token", parseRes.token);

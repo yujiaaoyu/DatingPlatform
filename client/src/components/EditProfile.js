@@ -1,6 +1,9 @@
 import React, { Fragment, useState } from "react";
 import { toast } from 'react-toastify';
-import Select from 'react-select';
+import Countries from "./Countries";
+import Cities from "./Cities";
+import Age from "./Age";
+import Gender from "./Gender";
 
 const EditProfile = ({setAuth}) => {
 
@@ -14,7 +17,7 @@ const [inputs, setInputs] = useState({
 })
 
 const {first_name, last_name} = inputs;
-let age, gender, country, city;
+let age, country, gender,  city;
 
 const onChange = e => {
     setInputs({...inputs, [e.target.name] : e.target.value});
@@ -22,65 +25,45 @@ const onChange = e => {
 
 console.log(first_name);
 console.log(last_name);
-// console.log(age);
-// console.log(gender);
-// console.log(country);
-// console.log(city);
+console.log(age);
+console.log(gender);
+
+const getCityMsg = getCity => {
+  city = getCity.value;
+  console.log('get the msg from city component: ', city);
+};
+
+const getCountryMsg = getCountry => {
+  country = getCountry.value;
+  console.log('get the msg from country component: ', country);
+};
+
+const getAgeMsg = getAge => {
+  age = getAge.value;
+  console.log('get the msg from age component: ', age);
+};
+
+const getGenderMsg = getGender =>{
+  gender = getGender.value;
+  console.log('get the msg from gender component: ', gender);
+};
+
 
 const onSubmitForm = async e => {
     e.preventDefault();
 
     try {
-
-        var radios = document.getElementsByName('genderS');
-        for (var i = 0, length = radios.length; i < length; i++) {
-        if (radios[i].checked) {
-            // do whatever you want with the checked radio
-            gender = radios[i].value;
-            // alert(radios[i].value);
-            console.log(gender);
-
-            // only one radio can be logically checked, don't check the rest
-            break;
-            }
-        };
-
-        const btn = document.querySelector('#btn');
-        const selectCountry = document.querySelector('countrySelect');
-        btn.onclick = (event) => {
-            event.preventDefault();
-            // show the selected index
-            country = [].filter
-                .call(selectCountry.options, option => option.selected)
-                .map(option => option.text);
-            alert(country);
-        };
-
-        const selectCity = document.querySelector('citySelect');
-        btn.onclick = (event) => {
-            event.preventDefault();
-            // show the selected index
-            city = [].filter
-                .call(selectCity.options, option => option.selected)
-                .map(option => option.text);
-            console.log(city);
-            alert(city);
-        };
-    
         const body = {first_name, last_name, age, gender, country, city};
+        console.log(body);
 
         const response = await fetch("http://localhost:5000/auth/editProfile", {
             method: "POST",
-            headers: {"Content-Type": "application/json"},
-
+            headers: {"Content-Type": "application/json",
+            "Authorization": localStorage.token },
             body: JSON.stringify(body)
         });
 
         const parseRes = await response.json();
-        console.log(parseRes);
-
-        // localStorage.setItem("token", parseRes.token);
-        // setAuth(true);
 
         if (parseRes.token) {
             localStorage.setItem("token", parseRes.token);
@@ -90,50 +73,11 @@ const onSubmitForm = async e => {
             setAuth(false);
             toast.error(parseRes);
           }
-
-        console.log(parseRes);
-
     } catch (error) {
         console.error(error.message);
-    };
-
-
-};
-
-const data = [
-    {
-      value: 1,
-      label: "Between 18 - 30 years"
-    },
-    {
-      value: 2,
-      label: "Between 31 - 40 years"
-    },
-    {
-      value: 3,
-      label: "Between 41 - 50 years"
-    },
-    {
-      value: 4,
-      label: "Between 51 - 60 years"
-    },
-    {
-      value: 5,
-      label: "Between 61 - 70 years"
-    },
-    {
-      value: 6,
-      label: "Beyond 70 years"
     }
-  ];
- 
-  // set value for default selection
-  const [selectedValue, setSelectedValue] = useState(3);
- 
-  // handle onChange event of the dropdown
-  const handleChange = e => {
-    setSelectedValue(e.label);
-  }
+  };
+
 
     return (
     <Fragment>
@@ -149,54 +93,13 @@ const data = [
                     <br></br><input type='text' name="last_name" placeholder="Last name" value={ last_name } onChange={e => onChange(e)}/>
                 </div>
             </div>
-            <div className="Dropdowndata">
-                <label>Age</label><br /><br />
- 
-                <Select
-                placeholder="Select Option"
-                value={data.find(obj => obj.value === selectedValue)} // set selected value
-                options={data} // set list of the data
-                onChange={handleChange} // assign onChange function
-                />
- 
-                {selectedValue && <div style={{ marginTop: 20, lineHeight: '25px' }}>
-                <div><b>Selected Value: </b> {selectedValue}</div>
-                </div>}
-            </div>
-            <fieldset class="form-group">
-                <label for="gender" class="col-sm-2">Gender</label>
-        
-                <div class="form-check-inline">
-                    <input class="form-check-input" type="radio" name="genderS" id="genderRadio1" value="male" checked/>
-                    <label class="form-check-label" for="genderRadio1">
-                        Male
-                    </label>
-                </div>
-                <div class="form-check-inline">
-                    <input class="form-check-input" type="radio" name="genderS" id="genderRadio2" value="female"/>
-                    <label class="form-check-label" for="genderRadio2">
-                        Female
-                    </label>
-                </div>
-            </fieldset>
-
-            <div class="col-auto my-1">
-                <label class="mr-sm-2" for="countrySelect">Country</label>
-                <select class="custom-select mr-sm-2" id="countrySelect">
-                <option selected value="">United States</option>
-                <option value="1">Canada</option>
-                </select>
-            </div>
-
-            <div class="col-auto my-1">
-                <label class="mr-sm-2" for="citySelect">City</label>
-                <select class="custom-select mr-sm-2" id="citySelect">
-                <option selected>Denver, Co</option>
-                <option value="1">San Francisco, Ca</option>
-                </select>
-            </div>
+            <Age getMsg = {getAgeMsg}/> 
+            <Gender getMsg = {getGenderMsg}/>
+            
+            <Countries getMsg = {getCountryMsg}/>
+            <Cities getMsg = {getCityMsg} />
+            <button className="btn btn-success btn-block">SAVE CHANGES</button>
         </form>
-        <button className="btn btn-success btn-block">SAVE CHANGES</button>
     </Fragment>
     );
 };

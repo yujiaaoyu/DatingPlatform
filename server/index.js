@@ -10,12 +10,16 @@ app.use(cors());
 
 //ROUTES//
 
-// register and login routes
+// register, login, reset-password, editProfile routes
 app.use("/auth", require('./routes/jwtAuth'));
 
 // dashboard route
 
 app.use("/dashboard", require("./routes/dashboard"));
+
+
+// edit-password route
+// app.use("/reset-password", require("./routes/reset-password"));
 
 
 app.listen(5000, () => {
