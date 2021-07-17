@@ -46,6 +46,7 @@ const Dashboard = ({setAuth}) => {
         <h1>Dashboard { name } </h1>
         <Link to="/editProfile" clasaName="btn btn-primary">Edit Profile</Link>&nbsp; &nbsp;
         <Link to="/reset-password" clasaName="btn btn-primary">Reset Password</Link>&nbsp; &nbsp;
+        
         <button className="btn btn-primary" onClick={e => logout(e)}>Logout</button>
     </Fragment>
     );

@@ -21,7 +21,8 @@ import Login from './components/Login';
 import Register from './components/Register';
 import EditProfile from './components/EditProfile';
 import ResetPassword from './components/ResetPassword';
-
+import Upload from './components/Upload';
+import Coach from './components/Coach';
 
 toast.configure();
 
@@ -65,7 +66,9 @@ function App() {
             <Route exact path = "/dashboard" render={props => isAuthenticated ? <Dashboard {...props} setAuth={setAuth} /> : <Redirect to="/login"/> }/> 
             <Route exact path = "/editProfile" render={props => isAuthenticated ? <EditProfile {...props} setAuth={setAuth} /> : <Redirect to="/login"/> }/> 
             <Route exact path = "/reset-password" render={props => isAuthenticated ? <ResetPassword {...props} setAuth={setAuth} /> : <Redirect to="/login"/>}/> 
+            <Route exact path = "/upload" render={props => isAuthenticated ? <Upload {...props} setAuth={setAuth} /> : <Redirect to="/login"/>}/> 
           </Switch>
+          <Coach/>
         </div>
       </Router>
     </Fragment>

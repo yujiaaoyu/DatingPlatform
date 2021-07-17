@@ -4,6 +4,7 @@ import Countries from "./Countries";
 import Cities from "./Cities";
 import Age from "./Age";
 import Gender from "./Gender";
+import { Link } from "react-router-dom";
 
 const EditProfile = ({setAuth}) => {
 
@@ -17,7 +18,7 @@ const [inputs, setInputs] = useState({
 })
 
 const {first_name, last_name} = inputs;
-let age, country, gender,  city;
+let age, country, gender, city;
 
 const onChange = e => {
     setInputs({...inputs, [e.target.name] : e.target.value});
@@ -49,6 +50,7 @@ const getGenderMsg = getGender =>{
 };
 
 
+
 const onSubmitForm = async e => {
     e.preventDefault();
 
@@ -59,11 +61,16 @@ const onSubmitForm = async e => {
         const response = await fetch("http://localhost:5000/auth/editProfile", {
             method: "POST",
             headers: {"Content-Type": "application/json",
-            "Authorization": localStorage.token },
+            "Authorization": localStorage.token},
             body: JSON.stringify(body)
         });
 
         const parseRes = await response.json();
+
+        // console.log(parseRes);
+
+        // image_address = parseRes.image;
+        // console.log("url is", image_address);
 
         if (parseRes.token) {
             localStorage.setItem("token", parseRes.token);
@@ -77,6 +84,7 @@ const onSubmitForm = async e => {
         console.error(error.message);
     }
   };
+
 
 
     return (
@@ -98,8 +106,17 @@ const onSubmitForm = async e => {
             
             <Countries getMsg = {getCountryMsg}/>
             <Cities getMsg = {getCityMsg} />
+        
             <button className="btn btn-success btn-block">SAVE CHANGES</button>
+            <figure class="figure">
+            <img src="http://res.cloudinary.com/dyrtafysd/image/upload/v1626496963/gi3n14o5g0z22tmgqrj3.jpg" class="rounded-circle" alt="User image."
+            height="200px" width="200px"/>
+            <figcaption class="figure-caption text-center">defalut user image.</figcaption>
+            <Link to="/upload" clasaName="btn ">Set image</Link>&nbsp; &nbsp;
+        </figure>
+
         </form>
+    
     </Fragment>
     );
 };

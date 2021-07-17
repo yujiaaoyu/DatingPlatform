@@ -128,7 +128,11 @@ router.post("/editProfile", validInfo, async (req, res) => {
         } 
         await pool.query("UPDATE users SET user_name = $1 WHERE user_id = $2", [first_name + last_name, user_id]);
         // console.log(update);
-        res.json( { token } );
+
+        // const url_information = await pool.query("SELECT url FROM user_images WHERE user_id = $1", [user_id]);
+        // const image = url_information.rows[0].url;
+        // console.log(url_information.rows[0].url);
+        res.json( { token} );
 
     } catch (error) {
         console.log(error);
@@ -150,14 +154,50 @@ router.post("/reset-password", validInfo, async (req, res) => {
        
         const user = payload.user; 
         // console.log(user);
-        const user_info = await pool.query("SELECT * FROM users WHERE user_id = $1", [user]);
-        const storedEmail = user_info.user_email;
+        const user_info = await pool.query("SELECT * FROM users WHERE (user_id) = $1", [user]);
+        const storedEmail = user_info.rows[0].user_email;
+        // console.log(storedEmail);
         if (storedEmail !== email) {
             return res.status(401).json("Input email is incorrect!");
         } else {
             // const user = await pool.query("UPDATE users SET user_password = $1 WHERE user_id = $2", [req.user]);
             res.json( { token } );
         }
+    } catch (error) {
+        console.log(error);
+        res.status(500).json("Server Error");
+    }
+});
+
+const {cloudinary} =  require("../utils/cloudinary");
+
+router.post("/upload", authorization, async (req, res) => {
+    try {
+        
+        console.log("line 185:req.user is", req.user);
+        // Get the user_id
+        const user = req.user;
+
+        // file information in base64
+        const fileStr = req.body.data;
+        // console.log(fileStr);
+        const uploadedResponse = await cloudinary.uploader.upload(fileStr, {
+            upload_preset: 'a9oldzhq'
+        });
+
+        const exist = await pool.query("SELECT * FROM user_images WHERE (user_id) = $1", [user]);
+        if (!exist) {
+            await pool.query("INSERT INTO user_images (user_id, url) VALUES ($1, $2) ", [user, uploadedResponse.url]);
+        } else {
+            await pool.query("UPDATE user_images SET url = $1 WHERE user_id = $2", [uploadedResponse.url, user]);
+        }
+
+        console.log(uploadedResponse);
+
+        // give the jwt token
+        const token = jwtGenerator(user);
+        res.json({ token });
+
     } catch (error) {
         console.log(error);
         res.status(500).json("Server Error");
@@ -174,5 +214,6 @@ router.get("/is-verify", authorization, async (req, res) => {
         res.status(500).send("Server Error");
     }
 });
+
 
 module.exports = router;
