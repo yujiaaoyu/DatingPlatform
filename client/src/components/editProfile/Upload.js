@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 const Upload = ({setAuth}) => {
 
     const [fileInputState, setFileInputState] = useState("");
-    const [selectedFile, setSelectedFile] = useState("");
+    const [setSelectedFile] = useState("");
     const [previewSource, setPreviewSource] = useState("");
 
     const handleFileInputChange = (e) => {

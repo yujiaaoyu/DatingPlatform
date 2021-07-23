@@ -28,7 +28,7 @@ const Coach = () => {
                 cloudName="dyrtafysd" // hard coded
                 publicId={imageId}
                 width="300"
-                height="300"
+               
                 crop="scale"
                 />
             ))}

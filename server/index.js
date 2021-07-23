@@ -18,6 +18,8 @@ app.use("/auth", require('./routes/jwtAuth'));
 
 app.use("/dashboard", require("./routes/dashboard"));
 
+// app.use("/confirm-reset-password", require("./routes/confirm-reset-password"));
+
 app.get('/coaches', async (req, res) => {
     const {resources} = await cloudinary.search.expression('folder: coaches')
     .sort_by('public_id', 'desc')

@@ -29,7 +29,7 @@ const Login = ({setAuth}) => {
           
           console.log(response);
           const parseRes = await response.json();
-            // console.log(parseRes.token);
+          // console.log("line 32", parseRes.token);
 
           // localStorage.setItem("token", parseRes.token);
           // setAuth(true);
@@ -51,9 +51,9 @@ const Login = ({setAuth}) => {
     <Fragment>
         <h1 className="text-center my-5">Login</h1>
         <form onSubmit={onSubmitForm}>
-            <label for="uemail"><b>Username</b></label>
+            <label htmlFor="uemail"><b>Email</b></label>
             <input type="email" name="email" placeholder="email" className="form-control my-3" value={ email } onChange={e => onChange(e)}/>
-            <label for="psw"><b>Password</b></label>
+            <label htmlFor="psw"><b>Password</b></label>
             <input type="password" name="password" placeholder="password" className="form-control my-3" value= { password } onChange={e => onChange(e)}/>
             <button className="btn btn-success btn-block">LOG IN</button>
         </form>
