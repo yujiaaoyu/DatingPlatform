@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --white: #FFFFFF;
+    --grey:#C4C4C4;
+    --dark_grey:#555555;
+    --Gainsboro:#E1E1E1;
+    --grey87: #dedede;
+    --white_smoke: #F2F2F2;
+    --whisper: #E8E8E8;
+    --dark_shade: #333333;
+}
+
+
+.ecllipse9{
+    /* Ellipse 9 */
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    left: 23px;
+    top: 22px;
+    border-radius: 50%;
+
+    background: var(--grey);
+    opacity: 0.7;
+}
+.ecllipse10{
+    /* Ellipse 10 */
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    left: 51px;
+    top: 22px;
+    border-radius: 50%;
+
+    background: var(--grey);
+    opacity: 0.5;
+}
+.datingApp{
+    /* Dating app */
+    position: absolute;
+    width: 66.46px;
+    height: 45.19px;
+    left: 122.56px;
+    top: 28.22px;
+
+   color: var(--dark_grey);
+}
+.search_rect{
+    /* Rectangle 8 */
+    position: absolute;
+    left: 27.01%;
+    right: 35.49%;
+    top: 27%;
+    bottom: 25%;
+    width:540px;
+    height: 48px;
+
+    background: var(--white);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+}
+
+.top{
+    /* Group 133 */
+    position: absolute;
+    width: 1440px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+
+}
+
+.become_coach{
+    /* Become a coach */
+    position: absolute;
+    left: 76.74%;
+    right: 15.42%;
+    top: 42%;
+    bottom: 42%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+
+    color: var(--dark_grey);
+}
+.ecllipse17{
+    position: absolute;
+    left: 93.19%;
+    right: 2.92%;
+    top: 22%;
+    bottom: 22%;
+    border-radius: 50%;
+
+    background: var(--Gainsboro);
+    border-radius: 50px;
+}
+.bell_rect{
+    position: absolute;
+    left: 89.58%;
+    right: 7.92%;
+    top: 32%;
+    bottom: 32%;
+
+    background: var(--Gainsboro);
+    border-radius: 3px;
+}
+.h_line{
+    /* Rectangle 9 */
+    position: absolute;
+    width: 1440px;
+    height: 1px;
+    left: 0px;
+    top: 100px;
+
+    background: var(--grey87);
+}
+.p_line{
+    position: absolute;
+    width: 1px;
+    height: 100px;
+    left: 324px;
+    top: 0px;
+
+    background: var(--grey87);
+}
+
+.add_links{
+    /* Add social media links */
+    position: absolute;
+    width: 134px;
+    height: 14px;
+    left: 23px;
+    top: 608px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+    text-decoration-line: underline;
+
+    color: var(--black);
+}
+.add_website{
+    /* Add your website */
+    position: absolute;
+    width: 102px;
+    height: 14px;
+    left: 23px;
+    top: 627px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+    text-decoration-line: underline;
+
+    color: var(--black);
+}
+
+.first_name_label{
+    /* First name */
+    position: absolute;
+    width: 63px;
+    height: 14px;
+    left: 818px;
+    top: 160px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: var(--black);
+}
+.first_name_rect{
+    position: absolute;
+    width: 254px;
+    height: 48px;
+    left: 818px;
+    top: 179px;
+
+    background: var(--white);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    border: none;
+}
+.last_name_label{
+    /* Last name */
+    position: absolute;
+    width: 62px;
+    height: 14px;
+    left: 1103px;
+    top: 160px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: var(--black);
+}
+.last_name_rect{
+    position: absolute;
+    width: 254px;
+    height: 48px;
+    left: 1103px;
+    top: 179px;
+
+    background: var(--white);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    border: none;
+}
+.birth_label{
+    /* Date of birth */
+    position: absolute;
+    width: 75px;
+    height: 14px;
+    left: 817px;
+    top: 253px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+    color: var(--black);
+}
+.birth_rect{
+    position: absolute;
+    width: 254px;
+    height: 48px;
+    left: 817px;
+    top: 272px;
+
+    background: var(--white);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    border: none;
+}
+.gender_label{
+    position: absolute;
+    width: 42.46px;
+    height: 14px;
+    left: 1103px;
+    top: 253px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: var(--black);
+}
+.gender_rect{
+    position: absolute;
+    width: 254px;
+    height: 48px;
+    left: 1103px;
+    top: 272px;
+
+    background: var(--white);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    border:none
+}
+.gender_placeholder{
+    /* Female */
+    position: absolute;
+    width: 50px;
+    height: 16px;
+    left: 1124.34px;
+    top: 288px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+
+    color: var(--dark_grey);
+}
+.country_label{
+    /* Country */
+    position: absolute;
+    width: 46px;
+    height: 14px;
+    left: 818px;
+    top: 346px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: var(--black);
+}
+.country_rect{
+    position: absolute;
+    width: 254px;
+    height: 48px;
+    left: 818px;
+    top: 365px;
+
+    background: var(--white);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    border: none;
+}
+.country_placeholder{
+    /* United States */
+    position: absolute;
+    width: 93px;
+    height: 16px;
+    left: 839.34px;
+    top: 381px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+
+    color: #555555;
+}
+.city_label{
+    /* City */
+    position: absolute;
+    width: 23px;
+    height: 14px;
+    left: 1103px;
+    top: 343px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: var(--dark_grey);
+}
+
+.city_rect{
+    position: absolute;
+    width: 254px;
+    height: 48px;
+    left: 1103px;
+    top: 362px;
+    border: none;
+
+    background: var(--white);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+}
+.about_label{
+    /* About you */
+    position: absolute;
+    width: 60px;
+    height: 14px;
+    left: 818px;
+    top: 439px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: var(--dark_grey);
+}
+.about_rect{
+    /* Rectangle 8 */
+    position: absolute;
+    width: 539px;
+    height: 125px;
+    left: 818px;
+    top: 458px;
+    border: none;
+
+    background: var(--white);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+}
+.area_label{
+    position: absolute;
+    width: 109px;
+    height: 14px;
+    left: 818px;
+    top: 612px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: var(--dark_grey);
+}
+.area_rect{
+    position: absolute;
+    width: 539px;
+    height: 125px;
+    left: 818px;
+    top: 631px;
+    border: none;
+
+    background: var(--whit);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+}
+
+.react_tag_input{
+    border: none;
+}
+
+.submit_rect{
+    position: absolute;
+    width: 140px;
+    height: 48px;
+    left: 1058px;
+    top: 785px;
+
+    background: var(--dark_shade);
+    border-radius: 3px;
+}
+
+.submit_txt{
+    /* submit */
+    position: absolute;
+    width: 51px;
+    height: 16px;
+    left: 1103px;
+    top: 801px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: var(--white);
+}
+.cancle_rect{
+    /* Rectangle 6 */
+    position: absolute;
+    width: 140px;
+    height: 48px;
+    left: 1217px;
+    top: 785px;
+
+    border: 2px solid var(--dark_grey);
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.cancle_txt{
+    /* Cancel */
+    position: absolute;
+    width: 54px;
+    height: 16px;
+    left: 1260px;
+    top: 801px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: var(--dark_grey);
+}
+
+.search{
+    position: absolute;
+    left: 61.88%;
+    right: 36.88%;
+    top: 42%;
+    bottom: 40%;
+
+    background: transparent;
+}
+
+.search_btn{
+    position: absolute;
+    left: 11.4%;
+    right: 11.4%;
+    top: 0%;
+    bottom: 0%;
+
+    background: transparent;
+    border:0;
+
+    
+}
+
+.serach_image{
+    position: absolute;
+    left: 11.4%;
+    right: 11.4%;
+    top: 0%;
+    bottom: 0%;
+
+    height: 18px;
+    width: 13.9px;
+    background-color: transparent;
+
+}

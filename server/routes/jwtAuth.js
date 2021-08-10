@@ -17,7 +17,9 @@ router.post("/register", validInfo, async(req, res) => {
     try {
         //1. destructure the req.body (name, email, password)
 
-        const { first_name, last_name, email, password, confirm_password } = req.body;
+        const { first_name, last_name, email, password, confirm_password, area, speciality } = req.body;
+        console.log(area);
+        console.log(speciality);
 
         //2. check if user exist (if user exist then throw error)
         const user = await pool.query("SELECT * FROM users WHERE user_email = $1", 
@@ -37,7 +39,12 @@ router.post("/register", validInfo, async(req, res) => {
 
             //4. enter the new user inside our database
 
-            const newUser = await pool.query("INSERT INTO users (user_name, user_email, user_password) VALUES($1, $2, $3) RETURNING *", [first_name + " " + last_name, email, bcryptPassword]);
+            if (area && speciality) {
+                const newCoach = await pool.query("INSERT INTO coaches (first_name, last_name, email, password, areas, speciality) VALUES($1, $2, $3, $4, $5, $6) RETURNING *", 
+                [first_name, last_name, email, bcryptPassword, area, [speciality] ]);
+            }
+
+            const newUser = await pool.query("INSERT INTO users (first_name, last_name, user_email, user_password) VALUES($1, $2, $3, $4) RETURNING *", [first_name, last_name, email, bcryptPassword]);
             // res.json(newUser.rows[0]);
 
             //5.generating our jwt token
@@ -45,7 +52,8 @@ router.post("/register", validInfo, async(req, res) => {
             res.json( { token } );
 
         } else {
-            console.log("Password doen't match!");
+            res.json("Password doesn't match!");
+            console.log("Password doesn't match!");
         }
 
 
@@ -95,7 +103,9 @@ router.post("/login", validInfo, async (req, res) => {
     }
 });
 
-router.post("/editProfile", validInfo, async (req, res) => {
+// Edit Profile 
+
+router.post("/editProfile/add", validInfo, async (req, res) => {
     try {
 
         //req.header has the token
@@ -112,130 +122,77 @@ router.post("/editProfile", validInfo, async (req, res) => {
         const {first_name, last_name, age, gender, country, city} = req.body;
         
         //enter the user_profile inside our database
-        // console.log("line99: req.user is", req.user);
-        // console.log(first_name);
-        // console.log(last_name);
-        // console.log(gender);
-        // console.log(country);
-        // console.log(city);
+       
+        const user_id = req.user;
+
+        if (first_name) {
+            await pool.query("UPDATE users SET first_name = $1 WHERE user_id = $2", [first_name, user_id]);
+        }
+        if (last_name) {
+            await pool.query("UPDATE users SET last_name = $1 WHERE user_id = $2", [last_name, user_id]);
+        }
+        if (age) {
+            await pool.query("UPDATE users SET age = $1 WHERE user_id = $2", [age, user_id]);
+        }
+        if (gender) {
+            await pool.query("UPDATE users SET gender = $1 WHERE user_id = $2", [gender, user_id]);
+        }
+        if (country) {
+            await pool.query("UPDATE users SET country = $1 WHERE user_id = $2", [country, user_id]);
+        }
+        if (city) {
+            await pool.query("UPDATE users SET city = $1 WHERE user_id = $2", [city, user_id]);
+        }
+
+
+        res.json( {token} );
+
+    } catch (error) {
+        console.log(error);
+        res.status(500).json("Server Error");
+    }
+});
+
+// Get user image which will show on the editProfile page.
+
+router.get("/editProfile/", async (req, res) => {
+    try {
+
+        //req.header has the token
+        const token = req.header("token");
+        if (!token) {
+            return res.status(403).json("Not Authorized");
+        }
+        const payload = jwt.verify(token, process.env.jwtSecret);
+
+        //req.user has the payload
+        // it is going to give us the user id (user:{id: user.id})
+        req.user = payload.user;
 
         const user_id = req.user;
-        console.log("line 123", user_id);
+        
+        // get url of the user image inside our database
+        const user_info = await pool.query("SELECT url From user_images WHERE user_id = $1", [user_id] );
+        console.log(user_info.rows[0]);
 
-        const exist = await pool.query("SELECT * FROM profiles WHERE (user_id) = $1", [user_id]);
-        if (!exist) {
-            const newProfile = await pool.query("INSERT INTO profiles (user_id, first_name, last_name, age, gender, country, city) VALUES($1, $2, $3, $4, $5, $6, $7) RETURNING *", [user_id, first_name, last_name, age, gender, country, city]);
-        } else {
-            const newProfile = await pool.query("UPDATE profiles SET first_name = $1, last_name = $2, age = $3, gender = $4, country = $5, city = $6 WHERE user_id = $7 RETURNING *", [first_name, last_name, age, gender, country, city, user_id]);
-        } 
-        await pool.query("UPDATE users SET user_name = $1 WHERE user_id = $2", [first_name + last_name, user_id]);
-        // console.log(update);
-
-        // const url_information = await pool.query("SELECT url FROM user_images WHERE user_id = $1", [user_id]);
-        // const image = url_information.rows[0].url;
-        // console.log(url_information.rows[0].url);
-        res.json( { token} );
+        return res.json( user_info.rows[0] );
 
     } catch (error) {
         console.log(error);
         res.status(500).json("Server Error");
     }
+
 });
 
-
-router.post("/reset-password", validInfo, async (req, res) => {
-
-    const { email } = req.body; 
-    
-    try {
-
-        const token = req.header("token");
-        if (!token) {
-            return res.status(403).json("Not Authorized");
-        }
-        const payload = jwt.verify(token, process.env.jwtSecret);
-       
-        const user = payload.user; 
-        // console.log(user);
-        const user_info = await pool.query("SELECT * FROM users WHERE (user_id) = $1", [user]);
-        const storedEmail = user_info.rows[0].user_email;
-        // console.log(storedEmail);
-        if (storedEmail !== email) {
-            return res.status(401).json("Input email is incorrect!");
-        } else {
-            // const user = await pool.query("UPDATE users SET user_password = $1 WHERE user_id = $2", [req.user]);
-            res.json( { token } );
-            const transporter = nodemailer.createTransport({
-                service:"hotmail",
-                auth: {
-                    user: "testDatingApp@outlook.com",
-                    pass: "BbX+Ni)c<7rs=L6"
-                }
-            });
-
-            const options = {
-                from: "testDatingApp@outlook.com",
-                to: email,
-                subject: "Reset password",
-                html: '<h1>Reset Password</h1><a href="http://localhost:3000/auth/confirm-reset-password">Reset</a>'
-            };
-
-            transporter.sendMail(options,  await function(err, info) {
-                if (err) {
-                    console.log(err);
-                }
-                console.log("Sent: ", info.response);
-            });
-
-
-        }
-    } catch (error) {
-        console.log(error);
-        res.status(500).json("Server Error");
-    }
-});
-
-router.post("/confirm-reset-password", async (req, res) => {
-
-    const { email, password } = req.body; 
-    // console.log(email);
-    // console.log(password);
-    
-    try {
-
-        const token = req.header("token");
-        if (!token) {
-            return res.status(403).json("Not Authorized");
-        }
-        const payload = jwt.verify(token, process.env.jwtSecret);
-       
-        const user = payload.user; 
-        console.log(user);
-        const user_info = await pool.query("SELECT * FROM users WHERE (user_id) = $1", [user]);
-        const storedEmail = user_info.rows[0].user_email;
-        // console.log(storedEmail);
-        if (storedEmail !== email) {
-            return res.status(401).json("Input email is incorrect!");
-        } else {
-            const saltRound = 10;
-            const salt = await bcrypt.genSalt(saltRound);
-            const bcryptPassword = await bcrypt.hash(password, salt);
-
-            await pool.query("UPDATE users SET user_password = $1 WHERE user_id = $2", [bcryptPassword, user]);
-            res.json( { token } );
-        }
-    } catch (error) {
-        console.log(error);
-        res.status(500).json("Server Error");
-    }
-});
 
 const {cloudinary} =  require("../utils/cloudinary");
+
+// Upload user images
 
 router.post("/upload", authorization, async (req, res) => {
     try {
         
-        console.log("line 238:req.user is", req.user);
+        // console.log("line 238:req.user is", req.user);
         // Get the user_id
         const user = req.user;
 
@@ -246,16 +203,20 @@ router.post("/upload", authorization, async (req, res) => {
             upload_preset: 'a9oldzhq'
         });
 
-        // console.log(uploadedResponse);
-
+        // check whether this user exists
         const exist = await pool.query("SELECT * FROM user_images WHERE (user_id) = $1", [user]);
-        console.log(exist.rows[0]);
+
+        // user doesn't exist
         if (!exist.rows[0]) {
             await pool.query("INSERT INTO user_images (user_id, url) VALUES ($1, $2) ", [user, uploadedResponse.secure_url]);
         } else {
-            await pool.query("UPDATE user_images SET url = $1 WHERE user_id = $2", [uploadedResponse.secure_url, user]);
-        }
-
+            // user doesn't have 6 images
+            if (!exist.rows.length != 6) {
+                await pool.query("INSERT INTO user_images (user_id, url) VALUES ($1, $2) ", [user, uploadedResponse.secure_url]);
+            } else {
+                return res.json("You already have 6 images.");
+            }
+        };
 
         // give the jwt token
         const token = jwtGenerator(user);
@@ -267,18 +228,23 @@ router.post("/upload", authorization, async (req, res) => {
     }
 });
 
+// Upload user prompts 
+
 router.post("/editProfile/prompts", authorization, async (req, res) => {
     //await
     try {
-        // console.log(req.body);
-        const { place, dating, relationship, trait } = req.body;
-        const newPrompt = await pool.query("INSERT INTO prompts (user_id, place, dating, relationship, trait) VALUES($1, $2, $3, $4, $5) RETURNING *", 
-        [req.user, place, dating, relationship, trait]
+        // Get prompts from the request body
+        const { prompt1, prompt2, prompt3 } = req.body;
+        
+        // add data into data base
+        const newPrompt = await pool.query("INSERT INTO prompts (user_id, prompts1, prompts2, prompts3) VALUES($1, $2, $3, $4) RETURNING *", 
+        [req.user, prompt1, prompt2, prompt3]
         );
 
         if (newPrompt.rows[0].length === 0) {
             return res.json("Somthing went wrong.");
         }
+        // success 
         res.json("Added a new prompt!");
 
     } catch (error) {
@@ -287,12 +253,81 @@ router.post("/editProfile/prompts", authorization, async (req, res) => {
 });
 
 
+// Get user info showed in the home 
+
+router.get("/home", authorization, async (req, res) => {
+    try {
+        
+        // Get user info from the database
+        const details = await pool.query("SELECT first_name, last_name, age, gender, country, city from users WHERE user_id = $1", [req.user]);
+
+        const user_info = details.rows[0];
+
+        // Get prompts
+        const prompts = await pool.query("SELECT * from prompts WHERE user_id = $1", [req.user]);
+
+        // Get image url
+        const images = await pool.query("SELECT * from user_images WHERE user_id = $1", [req.user]);
+        const url = images.rows[0].url;
+
+        const prompt1 = prompts.rows[0].prompts1;
+        const prompt2 = prompts.rows[0].prompts2;
+        const prompt3 = prompts.rows[0].prompts3;
+
+        const about = { prompt1, prompt2, prompt3 };
+    
+        console.log(user_info, about);
+        // Send to client
+        res.json({user_info, about, url});
+       
+    } catch (error) {
+        console.error(error.message);
+    }
+});
+
+// Get all images of a user
+
+router.get('/images', authorization, async (req, res) => {
+    try {
+        // get data from database
+        const data = await pool.query("SELECT url, image_id FROM user_images WHERE user_id = $1", [req.user]);
+        console.log(data.rows);
+
+        // send to client
+        res.json(data.rows);
+    } catch (error) {
+        console.error(error.message);
+    }
+});
+
+
+// Delete an image
+
+router.delete('/images/:id', authorization, async (req, res) => {
+    try {
+        // image id
+        const { id } = req.params;
+
+        // delete image
+        const data = await pool.query("DELETE FROM user_images WHERE user_id = $1 AND image_id = $2 RETURNING *", [req.user, id]);
+        if (data.rows.length === 0) {
+            return res.json("Something went wrong.");
+        }
+
+        // success
+        res.json("Deleted.");
+    } catch (error) {
+        console.log(error);
+    }
+});
+
+
+// verify a user
 
 router.get("/is-verify", authorization, async (req, res) => {
     try {
         res.json(true);
     } catch (error) {
-        console.error(error.message);
         console.log(error);
         res.status(500).send("Server Error");
     }

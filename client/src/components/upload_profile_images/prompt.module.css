@@ -1,0 +1,188 @@
+.add_txt{
+    /* Add a new prompt */
+    position: absolute;
+    width: 115px;
+    height: 12px;
+    left: 1020px;
+    top: 574px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 12px;
+    /* identical to box height, or 86% */
+
+
+    color: #555555;
+}
+.add_icon{
+    position: absolute;
+    height: 12px;
+    left: 69.44%;
+    right: 29.72%;
+    top: 574px;
+
+    background: #555555;
+}
+.add_btn{
+    position: absolute;
+    width: 415px;
+    height: 40px;
+    left: 860px;
+    top: 560px;
+    
+    border: 1.3px solid #777777;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.prompt3_total{
+
+    position: absolute;
+    width: 415px;
+    height: 67px;
+    left: 860px;
+    top: 464px;
+}
+.prompt3_label{
+    position: absolute;
+    width: 106.87px;
+    height: 14px;
+    left: 860px;
+    top: 464px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: #555555;
+}
+.prompt3_txt{
+    position: absolute;
+    width: 145px;
+    height: 16px;
+    left: 880px;
+    top: 499px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+
+    color: #555555;
+}
+.prompt3_rect{
+    position: absolute;
+    width: 415px;
+    height: 48px;
+    left: 860px;
+    top: 483px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    border: none;
+}
+
+.prompt2_label{
+    /* Prompte 2 */
+    position: absolute;
+    width: 106.87px;
+    height: 14px;
+    left: 860px;
+    top: 368px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: #555555;
+}
+.prompt2_txt{
+    /* Say something funny */
+    position: absolute;
+    width: 145px;
+    height: 16px;
+    left: 880px;
+    top: 403px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+
+    color: #555555;
+}
+.prompt2_rect{
+    position: absolute;
+    width: 415px;
+    height: 48px;
+    left: 860px;
+    top: 387px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    border: none;
+}
+.prompt1_label{
+    position: absolute;
+    width: 106.87px;
+    height: 14px;
+    left: 860px;
+    top: 272px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: #555555;
+}
+.prompt1_txt{
+    /* Say something funny */
+    position: absolute;
+    width: 145px;
+    height: 16px;
+    left: 880px;
+    top: 307px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+
+    color: #555555;
+}
+.prompt1_rect{
+    position: absolute;
+    width: 415px;
+    height: 48px;
+    left: 860px;
+    top: 291px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    border: none;
+}

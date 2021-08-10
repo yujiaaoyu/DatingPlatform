@@ -20,7 +20,7 @@ module.exports = async (req, res, next) => {
         next();
 
     } catch (error) {
-        // console.log(error);
+        console.log(error);
         return res.status(403).json("Token is not valid");
     }
 }

@@ -1,0 +1,65 @@
+
+/* Group 34 */
+.group34{
+    position: absolute;
+    width: 201px;
+    height: 88px;
+    left: 545px;
+    top: 192px;
+}
+.group17{
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    left: 545px;
+    top: 192px;
+    border-radius: 50%;
+
+    background: #E1E1E1;
+    border-radius: 3px;
+}
+
+.city{
+    position: absolute;
+    width: 72px;
+    height: 16px;
+    left: 642px;
+    top: 239px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+
+    color: #777777;
+}
+.name {
+    position: absolute;
+    width: 104px;
+    height: 21px;
+    left: 642px;
+    top: 217px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: #333333;
+}
+.user_image{
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    left: 728px;
+    top: 192px;
+    border-radius: 50%;
+
+    background: #E1E1E1;
+}

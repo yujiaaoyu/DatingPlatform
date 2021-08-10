@@ -1,0 +1,516 @@
+.recommend{
+    /* Recommended coaches */
+    position: absolute;
+    width: 194px;
+    height: 21px;
+    left: 386px;
+    top: 134px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #333333;
+}
+.horizontal_line{
+    position: absolute;
+    width: 1007px;
+    height: 1px;
+    left: 389px;
+    top: 184px;
+
+    background: #DEDEDE;
+}
+.sortby{
+    /* Sort by */
+    position: absolute;
+    width: 45px;
+    height: 16px;
+    left: 754px;
+    top: 136px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #777777;
+}
+
+.back{
+    position: absolute;
+    width: 232px;
+    height: 232px;
+    left: 389px;
+    top: 208px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+}
+.photo{
+    /* position: absolute; */
+    position: absolute;
+    width: 82.58px;
+    height: 82px;
+    left: 464px;
+    top: 233px;
+    border-radius: 50%;
+
+    background: #DEDEDE;
+}
+.name{
+    position: absolute;
+    width: 89px;
+    height: 21px;
+    left: 461px;
+    top: 318px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+/* identical to box height */
+
+
+color: #333333;
+}
+.location{
+    /* Orlando, Fl */
+    position: absolute;
+    width: 68px;
+    height: 16px;
+    left: 471px;
+    top: 341px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #777777;
+}
+.view1{
+    position: absolute;
+    width: 199px;
+    height: 40px;
+    left: 406px;
+    top: 386px;
+
+    background: #555555;
+    border-radius: 3px;
+}
+.view_text{
+    /* View profile */
+    position: absolute;
+    width: 74px;
+    height: 16px;
+    left: 468px;
+    top: 398px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #F9F9F9;
+}
+.view_profile{
+    position: absolute;
+    width: 616px;
+    height: 96px;
+    left: 659px;
+    top: 240px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+
+
+    color: #555555;
+}
+
+.back2{
+    position: absolute;
+    width: 232px;
+    height: 232px;
+    left: 386px;
+    top: 464px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+}
+
+.photo2{
+    position: absolute;
+    width: 82.58px;
+    height: 82px;
+    left: 461px;
+    top: 489px;
+    border-radius: 50%;
+
+    background: #DEDEDE;
+}
+.name2{
+    /* Marta Lou */
+    position: absolute;
+    width: 83px;
+    height: 21px;
+    left: 461px;
+    top: 574px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #333333;
+}
+.location2{
+    position: absolute;
+    width: 67px;
+    height: 16px;
+    left: 469px;
+    top: 597px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #777777;
+}
+.view2{
+    position: absolute;
+    width: 199px;
+    height: 40px;
+    left: 403px;
+    top: 642px;
+
+    background: #555555;
+    border-radius: 3px;
+}
+.view2_text{
+    position: absolute;
+    width: 74px;
+    height: 16px;
+    left: 465px;
+    top: 654px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #F9F9F9;
+}
+.view2_profile{
+    position: absolute;
+    width: 616px;
+    height: 96px;
+    left: 659px;
+    top: 496px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+
+
+    color: #555555;
+}
+.back3{
+    position: absolute;
+    width: 232px;
+    height: 232px;
+    left: 386px;
+    top: 720px;
+   
+
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+}
+.photo3{
+    position: absolute;
+    width: 82.58px;
+    height: 82px;
+    left: 461px;
+    top: 745px;
+    border-radius: 50%;
+
+    background: #DEDEDE;
+}
+.name3{
+    position: absolute;
+    width: 111px;
+    height: 21px;
+    left: 447px;
+    top: 830px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #333333;
+}
+.location3{
+    position: absolute;
+    width: 72px;
+    height: 16px;
+    left: 466px;
+    top: 853px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #777777;
+}
+.view3{
+    position: absolute;
+    width: 199px;
+    height: 40px;
+    left: 403px;
+    top: 898px;
+
+    background: #555555;
+    border-radius: 3px;
+}
+.view3_text{
+    position: absolute;
+    width: 74px;
+    height: 16px;
+    left: 465px;
+    top: 910px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #F9F9F9;
+}
+.view3_profile{
+    position: absolute;
+width: 616px;
+height: 96px;
+left: 659px;
+top: 752px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+/* or 171% */
+
+
+color: #555555;
+}
+
+.toprated{
+    position: absolute;
+    width: 131px;
+    height: 32px;
+    left: 659px;
+    top: 391px;
+
+    background: #DADADA;
+    border-radius: 3px;
+}
+.offers{
+    position: absolute;
+    width: 212px;
+    height: 32px;
+    left: 800px;
+    top: 391px;
+
+    background: #DADADA;
+    border-radius: 3px;
+}
+
+.toprated_text{
+    position: absolute;
+width: 59px;
+height: 24px;
+left: 695px;
+top: 395px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+
+color: #555555;
+}
+.offers_text{
+    position: absolute;
+    width: 144px;
+    height: 24px;
+    left: 834px;
+    top: 395px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+
+    color: #555555;
+}
+
+.toprated2{
+    position: absolute;
+width: 131px;
+height: 32px;
+left: 659px;
+top: 647px;
+
+background: #DADADA;
+border-radius: 3px;
+}
+.offers2{
+    position: absolute;
+    width: 212px;
+    height: 32px;
+    left: 800px;
+    top: 647px;
+
+    background: #DADADA;
+    border-radius: 3px;
+}
+
+.toprated2_text{
+    position: absolute;
+    width: 59px;
+    height: 24px;
+    left: 695px;
+    top: 651px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+
+    color: #555555;
+}
+.offers2_text{
+    position: absolute;
+    width: 144px;
+    height: 24px;
+    left: 834px;
+    top: 651px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+
+    color: #555555;
+}
+
+.toprated3{
+    position: absolute;
+    width: 131px;
+    height: 32px;
+    left: 659px;
+    top: 903px;
+
+    background: #DADADA;
+    border-radius: 3px;
+}
+.offers3{
+    position: absolute;
+    width: 212px;
+    height: 32px;
+    left: 800px;
+    top: 903px;
+
+    background: #DADADA;
+    border-radius: 3px;
+}
+
+.toprated3_text{
+    position: absolute;
+    width: 59px;
+    height: 24px;
+    left: 695px;
+    top: 907px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+
+    color: #555555;
+}
+.offers3_text{
+    position: absolute;
+    width: 144px;
+    height: 24px;
+    left: 834px;
+    top: 907px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+
+    color: #555555;
+}
+.ellipse17{
+    position: absolute;
+    width:56px;
+    height:56px;
+    margin-left: 1342px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    border: none;
+
+    background: #E1E1E1;
+    border-radius: 50px;
+}

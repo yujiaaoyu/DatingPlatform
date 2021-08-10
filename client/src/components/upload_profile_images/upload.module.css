@@ -1,0 +1,180 @@
+.cancle_txt{
+    position: absolute;
+    width: 43px;
+    height: 16px;
+    left: 603px;
+    top: 694px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #555555;
+}
+.cancle_rect{
+    position: absolute;
+    width: 351px;
+    height: 40px;
+    left: 449px;
+    top: 682px;
+
+    border: 2px solid #555555;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.upload_txt{
+    /* Upload */
+    position: absolute;
+    width: 54px;
+    height: 16px;
+    left: 598px;
+    top: 640px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #F9F9F9;
+}
+
+.upload_rect{
+    position: absolute;
+    width: 350px;
+    height: 48px;
+    left: 450px;
+    top: 624px;
+
+    background: #333333;
+    border-radius: 3px;
+}
+
+.rect97{
+    position: absolute;
+    width: 32px;
+    height: 4px;
+    left: 704px;
+    top: 520px;
+    
+    background: #C4C4C4;
+    transform: rotate(90deg);
+}
+
+.rect96{
+    position: absolute;
+    width: 32px;
+    height: 4px;
+    left: 704px;
+    top: 522px;
+
+    background: #C4C4C4;
+}
+.rect73{
+    position: absolute;
+    width: 162px;
+    height: 152px;
+    left: 639px;
+    top: 272px;
+
+    background: #E1E1E1;
+    border-radius: 5px;
+}
+.rect76{
+    position: absolute;
+    width: 162px;
+    height: 152px;
+    left: 639px;
+    top: 448px;
+
+    background: #F2F2F2;
+    border-radius: 5px;
+    opacity: 80%;
+}
+.rect75{
+    position: absolute;
+    width: 163px;
+    height: 152px;
+    left: 450px;
+    top: 448px;
+
+    background: #E1E1E1;
+    border-radius: 5px;
+}
+
+.rect72{
+    position: absolute;
+    width: 163px;
+    height: 152px;
+    left: 450px;
+    top: 272px;
+
+    background: #E1E1E1;
+    border-radius: 5px;
+}
+
+.rect30{
+    position: absolute;
+    width: 160px;
+    height: 24px;
+    left: 94px;
+    top: 281px;
+
+    background: #E1E1E1;
+}
+.ellipse13_1{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 60px;
+    top: 281px;
+
+    background: #E1E1E1;
+}
+
+.chosenBlock{
+    position: absolute;
+    width: 324px;
+    height: 63px;
+    left: 0px;
+    top: 513px;
+
+    background: #F2F2F2;
+}
+.setting_txt{
+    position: absolute;
+    width: 73px;
+    height: 21px;
+    left: 94px;
+    top: 535px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    letter-spacing: 0.05em;
+    
+    color: #555555;
+}
+
+.setting_cir{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 60px;
+    top: 533px;
+    border-radius: 50%;
+
+    background: #E1E1E1;
+}
+
+.input_sty{
+    display: none;
+}

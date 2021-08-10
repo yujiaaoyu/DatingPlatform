@@ -1,0 +1,342 @@
+
+.group14{
+    /* Group 14 */
+    position: absolute;
+    width: 118.58px;
+    height: 40px;
+    left: 164px;
+    top: 816px;
+}
+
+.group13 {
+    position: absolute;
+    width: 351px;
+    height: 352px;
+    left: 164px;
+    top: 274px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    
+}
+
+.signUp {
+    /* Don’t have an account yet? Sign up */
+    position: absolute;
+    width: 217px;
+    height: 16px;
+    left: 232px;
+    top: 610px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #555555; 
+}
+
+.login {
+    /* Log in with Facebook */
+    position: absolute;
+    width: 133px;
+    height: 16px;
+    left: 273px;
+    top: 562px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #555555;
+}
+.rectangle6 {
+    /* Rectangle 6 */
+    position: absolute;
+    width: 351px;
+    height: 40px;
+    left: 164px;
+    top: 550px;
+
+    border: 2px solid #555555;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.password {
+    /* Password */
+    position: absolute;
+    width: 81px;
+    height: 6px;
+    left: 186px;
+    top: 405px;
+}
+
+.rectangle8 {
+    /* Rectangle 8 */
+    position: absolute;
+    width: 350px;
+    height: 48px;
+    left: 165px;
+    top: 384px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    border: none;
+}
+
+.forgetPassword {
+    /* Forget password? */
+    position: absolute;
+    width: 105px;
+    height: 14px;
+    left: 410px;
+    top: 442px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: #777777;
+}
+.passwordText {
+    /* Password */
+    position: absolute;
+    width: 62px;
+    height: 14px;
+    left: 165px;
+    top: 365px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: #555555;
+}
+.group12 {
+    /* Group 12 */
+    position: absolute;
+    width: 350px;
+    height: 48px;
+    left: 165px;
+    top: 492px;
+}
+
+.loginText {
+    /* Log in */
+
+
+    position: absolute;
+    width: 44px;
+    height: 16px;
+    left: 318px;
+    top: 508px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #F9F9F9;
+}
+.rectangle3{
+    /* Rectangle 3 */
+
+    position: absolute;
+    width: 350px;
+    height: 48px;
+    left: 165px;
+    top: 492px;
+
+    background: #333333;
+    border-radius: 3px;
+}
+
+.emailText {
+    /* Email */
+    position: absolute;
+    width: 42.46px;
+    height: 14px;
+    left: 165px;
+    top: 274px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: #555555;
+}
+.exampleEmail{
+    /* example@email.com */
+    position: absolute;
+    width: 184.01px;
+    height: 16px;
+    left: 186.34px;
+    top: 309px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+
+    color: #777777;
+}
+.emailRct{
+    position: absolute;
+    width: 350px;
+    height: 48px;
+    left: 165px;
+    top: 293px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    border: none;
+}
+
+.ellipse9 {
+    /* Ellipse 9 */
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 164px;
+    top: 816px;
+    border-radius: 50%;
+
+    background: #C4C4C4;
+    opacity: 0.7;
+}
+
+.ellipse10 {
+    /* Ellipse 10 */
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 184px;
+    top: 816px;
+    border-radius: 50%;
+
+    background: #C4C4C4;
+    opacity: 0.5;
+}
+.datingApp {
+    /* Dating app */
+    position: absolute;
+    width: 47.47px;
+    height: 32.28px;
+    left: 235.11px;
+    top: 820.44px;
+
+    color: #555555;
+}
+.topElip{
+    /* Ellipse 9 */
+
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 735px;
+    top: 48px;
+    border-radius: 50%;
+
+    background: #C4C4C4;
+    opacity: 0.7;
+}
+.topElip2 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 755px;
+    top: 48px;
+    border-radius: 50%;
+
+    background: #C4C4C4;
+    opacity: 0.5;
+}
+
+.topText {
+    position: absolute;
+    width: 47.47px;
+    height: 32.28px;
+    left: 806.11px;
+    top: 52.44px;
+
+    color: #555555;
+}
+
+.find {
+    /* Find your loved one with just a click */
+    position: absolute;
+    width: 350px;
+    height: 76px;
+    left: 735px;
+    top: 128px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+
+    color: #333333;
+
+}
+.image {
+    /* image-svgrepo-com 1 */
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    left: 991px;
+    top: 401px;
+}
+.rightRct {
+    /* Rectangle 9 */
+
+
+position: absolute;
+width: 800px;
+height: 900px;
+left: 640px;
+top: 0px;
+
+background: #F2F2F2;
+}
+
+.total{
+    position: relative;
+    width: 1440px;
+    height: 900px;
+
+    background: #F9F9F9;
+}
+
+.group14{
+    position: absolute;
+    width: 118.58px;
+    height: 40px;
+    left: 164px;
+    top: 816px;
+
+}

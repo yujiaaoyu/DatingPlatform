@@ -1,0 +1,114 @@
+
+
+.imges_background{
+    position: absolute;
+    width: 758px;
+    height: 410px;
+    left: 23px;
+    top: 174px;
+
+    background: var(--white_smoke);
+}
+.image1{
+    /* Rectangle 17 */
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    left: 51px;
+    top: 199px;
+
+    background: var(--Gainsboro);
+    border-radius: 3px;
+}
+.image2{
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    left: 195px;
+    top: 199px;
+
+    background: var(--Gainsboro);
+    border-radius: 3px;
+}
+.image3{
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    left: 339px;
+    top: 199px;
+
+    background: var(--Gainsboro);
+    border-radius: 3px;
+}
+.image4{
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    left: 483px;
+    top: 199px;
+    
+    background: var(--Gainsboro);
+    border-radius: 3px;  
+}
+.image5{
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    left: 627px;
+    top: 199px;
+
+    background:var(--Gainsboro);
+    border-radius: 3px;
+}
+.image6{
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    left: 51px;
+    top: 343px;
+
+    background: var(--Gainsboro);
+    border-radius: 3px;
+}
+.image7{
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    left: 195px;
+    top: 343px;
+
+    background: var(--whisper);
+    border-radius: 3px;
+}
+.input_sty{
+    display: none;
+}
+
+.upload_txt{
+    /* Upload */
+    position: absolute;
+    width: 51px;
+    height: 16px;
+    left: 505px;
+    top: 540px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #F9F9F9;
+}
+
+.upload_rect{
+    position: absolute;
+    width: 140px;
+    height: 48px;
+    left: 460px;
+    top: 524px;
+
+    background: #333333;
+    border-radius: 3px;
+}

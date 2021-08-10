@@ -1,0 +1,478 @@
+
+.ellipse9{
+    /* Ellipse 9 */
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    left: 23px;
+    top: 22px;
+    border-radius: 50%;
+
+    background: #C4C4C4;
+    opacity: 0.7;
+}
+
+.ellipse10{
+    /* Ellipse 10 */
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    left: 51px;
+    top: 22px;
+    border-radius: 50%;
+
+    background: #C4C4C4;
+    opacity: 0.5;
+}
+.datingApp{
+    position: absolute;
+    width: 66.46px;
+    height: 45.19px;
+    left: 122.56px;
+    top: 28.22px;
+
+    color: #555555;
+}
+
+.image1{
+    /* Rectangle 9 */
+    position: absolute;
+    width: 1440px;
+    height: 1px;
+    left: 0px;
+    top: 100px;
+
+    background: #DEDEDE;
+}
+
+.rect16{
+    /* Rectangle 16 */
+    position: absolute;
+    width: 18px;
+    height: 3px;
+    left: 269px;
+    top: 57px;
+
+    background: #333333;
+}
+.rect15{
+    /* Rectangle 15 */
+    position: absolute;
+    width: 26px;
+    height: 3px;
+    left: 269px;
+    top: 49px;
+
+    background: #333333;
+}
+
+.rect14{
+    /* Rectangle 14 */
+    position: absolute;
+    width: 18px;
+    height: 3px;
+    left: 277px;
+    top: 41px;
+
+    background: #333333;
+}
+
+
+.search_b{
+    /* Rectangle 8 */
+    position: absolute;
+    left: 27.01%;
+    right: 35.49%;
+    top: 27%;
+    bottom: 25%;
+
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+}
+
+.search_btn{
+    position: absolute;
+    left: 11.4%;
+    right: 11.4%;
+    top: 0%;
+    bottom: 0%;
+
+    background: transparent;
+    border:0;
+
+    
+}
+
+.serach_image{
+    position: absolute;
+    left: 11.4%;
+    right: 11.4%;
+    top: 0%;
+    bottom: 0%;
+
+    height: 18px;
+    width: 13.9px;
+    background-color: transparent;
+
+}
+
+.search_input{
+    position: absolute;
+    left: 27.01%;
+    right: 35.49%;
+    top: 27%;
+    bottom: 25%;
+    width: 540px;
+    height:48px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+}
+
+.search{
+    position: absolute;
+    left: 61.88%;
+    right: 36.88%;
+    top: 42%;
+    bottom: 40%;
+
+    background: transparent;
+}
+
+.image2{
+    position: absolute;
+    width: 1px;
+    height: 900px;
+    left: 324px;
+    top: 0px;
+
+    background: #DEDEDE;
+}
+.image3{
+    position: absolute;
+    width: 325px;
+    height: 800px;
+    left: 0px;
+    top: 100px;
+
+    background: #F9F9F9;
+}
+
+.image4{
+    /* Rectangle 9 */
+
+    position: absolute;
+    width: 325px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+
+    background: #F9F9F9;
+}
+
+.group133{
+    position: absolute;
+    width: 1440px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+}
+
+.ellipse13_1{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 60px;
+    top: 281px;
+    border-radius: 50%;
+    
+    background: #E1E1E1;
+}
+
+.ellipse13_2{
+    /* Ellipse 13 */
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 60px;
+    top: 596px;
+    border-radius: 50%;
+
+    background: #E1E1E1;
+}
+
+.ellipse13_3{
+    /* Ellipse 13 */
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 60px;
+    top: 344px;
+    border-radius: 50%;
+
+    background: #E1E1E1;
+}
+
+.ellipse13_4{
+    /* Ellipse 13 */
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 60px;
+    top: 407px;
+    border-radius: 50%;
+
+    background: #E1E1E1;
+}
+
+.ellipse13_5{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 60px;
+    top: 533px;
+    border-radius: 50%;
+
+    background: #E1E1E1;
+}
+.ellipse13_6{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 60px;
+    top: 470px;
+    border-radius: 50%;
+
+    background: #E1E1E1;
+}
+.dashboard{
+    position: absolute;
+    width: 88px;
+    height: 21px;
+    left: 94px;
+    top: 282px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    
+    color: #555555;
+}
+.myCoaches{
+    /* My coaches */
+    position: absolute;
+    width: 97px;
+    height: 21px;
+    left: 94px;
+    top: 346px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #555555;
+}
+.settings{
+    /* Lorem ipsum */
+    position: absolute;
+    width: 106px;
+    height: 21px;
+    left: 94px;
+    top: 535px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #555555;
+}
+.message{
+    /* Messages */
+    position: absolute;
+    width: 90px;
+    height: 21px;
+    left: 94px;
+    top: 408px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: #555555;
+
+}
+
+.home{
+    /* Home */
+
+
+    position: absolute;
+    width: 106px;
+    height: 21px;
+    left: 94px;
+    top: 472px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #555555;
+}
+
+.extra{
+    /* Extra */
+    position: absolute;
+    width: 106px;
+    height: 21px;
+    left: 94px;
+    top: 598px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #555555;
+}
+
+
+
+.image_email{
+    /* Group */
+    position: absolute;
+    left: 76.53%;
+    right: 21.84%;
+    top: 44%;
+    bottom: 41%;
+    height: 15px;
+    width: 23.75px;
+}
+
+.image_bell{
+    position: absolute;
+    left: 90.28%;
+    right: 8.61%;
+    top: 42%;
+    bottom: 41.11%;
+    height: 16.89px;
+    width: 16px;
+
+
+    background: #555555;
+    background-color: transparent;
+}
+.searchBy{
+    /* Search by interest */
+
+    position: absolute;
+    left: 28.4%;
+    right: 62.99%;
+    top: 43%;
+    bottom: 41%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+
+    color: #777777;
+}
+
+.recommended{
+    /* Recommended coaches */
+    position: absolute;
+    width: 194px;
+    height: 21px;
+    left: 386px;
+    top: 134px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #333333;
+
+}
+
+.line{
+    position: absolute;
+    width: 1007px;
+    height: 1px;
+    left: 389px;
+    top: 184px;
+
+    background: #DEDEDE;
+}
+
+.become_coach{
+    /* Become a coach */
+    position: absolute;
+    left: 76.74%;
+    right: 15.42%;
+    top: 42%;
+    bottom: 42%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+
+    color: #555555;
+
+}
+.bell_rect{
+    position: absolute;
+    left: 89.58%;
+    right: 7.92%;
+    top: 32%;
+    bottom: 32%;
+
+    background: #E1E1E1;
+    border-radius: 3px;
+}
+.ecllipse17{
+    position: absolute;
+    left: 93.19%;
+    right: 2.92%;
+    top: 22%;
+    bottom: 22%;
+    border-radius: 50%;
+    border: none;
+
+    background: #E1E1E1;
+    border-radius: 50px;
+}

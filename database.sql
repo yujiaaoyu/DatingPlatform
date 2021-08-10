@@ -4,35 +4,42 @@ CREATE DATABASE datingApp;
 CREATE TABLE users(
     user_id uuid PRIMARY KEY DEFAULT
     uuid_generate_v4(),
-    user_name VARCHAR(255) NOT NULL,
     user_email VARCHAR(255) NOT NULL UNIQUE,
-    user_password VARCHAR(255) NOT NULL
- );
+    user_password VARCHAR(255) NOT NULL,
+    first_name VARCHAR(255),
+    last_name VARCHAR(255),
+    age VARCHAR(30),
+    gender VARCHAR(6),
+    country VARCHAR(30),
+    city VARCHAR(30)
+);
 
-
--- table profiles
- CREATE TABLE profiles(
-    user_id VARCHAR(255) NOT NULL,
-    first_name VARCHAR(255) NOT NULL,
-    last_name VARCHAR(255) NOT NULL,
-    age VARCHAR(255) NOT NULL,
-    gender VARCHAR(255) NOT NULL,
-    country VARCHAR(255) NOT NULL,
-    city VARCHAR(255) NOT NULL,
- );
+CREATE TABLE user_details(
+   id uuid PRIMARY KEY DEFAULT
+   uuid_generate_v4(),
+   user_id uuid,
+   jobtitle VARCHAR(30),
+   company VARCHAR(50),
+   university VARCHAR(100),
+   height number,
+   ethinicity VARCHAR(50),
+   religion VARCHAR(50)
+);
 
 
 -- table user_images
- CREATE TABLE user_images(
-    user_id VARCHAR(255) NOT NULL,
-    url VARCHAR(255) NOT NULL,
-	UNIQUE(user_id)
- );
+CREATE TABLE user_images(
+   image_id uuid PRIMARY KEY DEFAULT
+   uuid_generate_v4(),
+   user_id uuid,
+   url VARCHAR(255) NOT NULL
+);
 
 
 -- table todoItems
  CREATE TABLE todoItems(
-    todo_id SERRIAL,
+    todo_id uuid,
+    uuid_generate_v4(),
     user_id UUID,
     description VARCHAR(255) NOT NULL,
     PRIMARY KEY (todo_id),
@@ -41,16 +48,42 @@ CREATE TABLE users(
 
 -- table prompts
  CREATE TABLE prompts(
-    prompts_id SERIAL,
-    user_id UUID,
-    place VARCHAR(255) NOT NULL,
-	dating VARCHAR(255) NOT NULL,
-	relationship VARCHAR(255) NOT NULL,
-	trait VARCHAR(255) NOT NULL,
-    PRIMARY KEY (prompts_id),
-    FOREIGN KEY (user_id) REFERENCES users(user_id)
+   prompts_id uuid PRIMARY KEY DEFAULT
+   uuid_generate_v4(),
+   user_id uuid,
+   prompts1 VARCHAR(255),
+   prompts2 VARCHAR(255),
+   Prompts3 VARCHAR(255),
+   FOREIGN KEY (user_id) REFERENCES users(user_id)
  );
+
+ -- table coaches
+CREATE TABLE coaches(
+    id uuid PRIMARY KEY DEFAULT
+    uuid_generate_v4(),
+    user_id uuid,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    first_name VARCHAR(255),
+    last_name VARCHAR(255),
+    birth DATE,
+    gender VARCHAR(6),
+    about VARCHAR(500),
+    social_links VARCHAR(255),
+    personal_website VARCHAR(255),
+    areas VARCHAR(50),
+    city VARCHAR(30),
+    country VARCHAR(30),
+    speciaty text[]
+);
  
+-- table coaches_images
+CREATE TABLE coach_images(
+   image_id uuid PRIMARY KEY DEFAULT
+   uuid_generate_v4(),
+   coach_id uuid,
+   url VARCHAR(255) NOT NULL
+);
 
  --insert fake users
 

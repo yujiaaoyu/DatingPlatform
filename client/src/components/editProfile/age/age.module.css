@@ -1,0 +1,59 @@
+.text{
+    position: absolute;
+    width: 153px;
+    height: 16px;
+    left: 566.34px;
+    top: 458px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+
+    color: #555555;
+}
+
+.rct{
+    position: absolute;
+    width: 254px;
+    height: 48px;
+    left: 728px;
+    top: 442px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+}
+
+.label{
+    /* Age */
+    position: absolute;
+    width: 42.46px;
+    height: 14px;
+    left: 728px;
+    top: 423px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: #555555;
+}
+
+.arrow{
+    position: absolute;
+    width: 13px;
+    height: 8px;
+    left: 783px;
+    top: 470px;
+
+    background: #333333;
+    transform: rotate(-180deg);
+}

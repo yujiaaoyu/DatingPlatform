@@ -1,0 +1,1203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.top {
+    /* Rectangle 34 */
+    position: absolute;
+    width: 1440px;
+    height: 96px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.datingApp {
+    /* Dating app */
+    position: absolute;
+    width: 56.93px;
+    height: 38.71px;
+    left: 225.28px;
+    top: 29.33px;
+
+    color: #555555;
+}
+
+/* Ellipse 9 */
+.ellipse9 {
+    position: absolute;
+    width: 47.97px;
+    height: 47.97px;
+    left: 140px;
+    top: 24px;
+    border-radius: 50%;
+
+    background: #C4C4C4;
+    opacity: 0.7;
+}
+
+/* Ellipse 10 */
+
+.ellipse10{
+    position: absolute;
+    width: 47.97px;
+    height: 47.97px;
+    left: 163.99px;
+    top: 24px;
+    border-radius: 50%;
+    
+    background: #C4C4C4;
+    opacity: 0.5;
+}
+
+.group14{
+    position: absolute;
+    width: 142.21px;
+    height: 47.97px;
+    left: 140px;
+    top: 24px;
+}
+.location{
+    /* locations */
+    position: absolute;
+    width: 75px;
+    height: 16px;
+    left: 848px;
+    top: 40px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #555555;
+
+}
+.login{
+/* Log in */
+    position: absolute;
+    width: 44px;
+    height: 16px;
+    left: 954px;
+    top: 40px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #555555;
+}
+
+
+.signup{
+    /* Sign up */
+    position: absolute;
+    width: 54px;
+    height: 16px;
+    left: 1029px;
+    top: 40px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #555555;
+}
+.becomeCoach{
+    /* become a coach */
+    position: absolute;
+    width: 120px;
+    height: 16px;
+    left: 1146px;
+    top: 40px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #F9F9F9;
+}
+.coach_blk{
+    position: absolute;
+    width: 185px;
+    height: 48px;
+    left: 1114px;
+    top: 24px;
+
+    background: #333333;
+    border-radius: 3px;
+}
+
+.middle_top{
+    /* Rectangle 39 */
+    position: absolute;
+    width: 1440px;
+    height: 480px;
+    left: 0px;
+    top: 96px;
+
+    background: #FFE4E1;
+}
+
+.hire_txt{
+    /* Hire a coach */
+    position: absolute;
+    width: 79px;
+    height: 24px;
+    left: 160px;
+    top: 220px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+
+    color: #333333;
+}
+
+.hire_rect{
+    /* Rectangle 116 */
+    position: absolute;
+    width: 151px;
+    height: 48px;
+    left: 140px;
+    top: 208px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+}
+.middle_top_h2{
+    /* Find local dating coaches is now possible */
+    position: absolute;
+    width: 411px;
+    height: 84px;
+    left: 140px;
+    top: 284px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: bold;
+
+    color: #333333;
+}
+.search_input_rect{
+    position: absolute;
+    width: 294px;
+    height: 48px;
+    left: 140px;
+    top: 392px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    border: none;
+
+
+}
+
+.search_btn{
+    /* Rectangle 3 */
+    position: absolute;
+    width: 135px;
+    height: 48px;
+    left: 450px;
+    top: 392px;
+
+    background: #333333;
+    border-radius: 3px;
+}
+.search_txt{
+    /* search */
+    position: absolute;
+    width: 54px;
+    height: 16px;
+    left: 490px;
+    top: 408px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #F9F9F9;
+}
+.search_input_rect .placeholder {
+    /* What are you looking for? */
+
+
+    position: absolute;
+    width: 175px;
+    height: 16px;
+    left: 161.34px;
+    top: 408px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+
+    color: #777777;
+
+}
+.search_image{
+    position: absolute;
+    left: 1032.25px;
+    right: 346.25px;
+    top: 199px;
+    bottom: 199px;
+
+    width: 61.5px;
+    height:82px;    
+}
+.steps{
+    /* You can hire a coah in 3 easy steps */
+    position: absolute;
+    width: 376px;
+    height: 28px;
+    left: 532px;
+    top: 660px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: bold;
+
+    color: #333333;
+}
+.ellipse34_1{
+    /* Ellipse 34 */
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    left: 332px;
+    top: 768px;
+    border-radius: 50%;
+
+    background: #E1E1E1;
+}
+.findCoach{
+    /* Find a coach */
+
+    position: absolute;
+    width: 150px;
+    height: 28px;
+    left: 285px;
+    top: 834px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #333333;
+}
+.coach_ex{
+    /* Find your coach in your area it’s or search your suitable coaches among deffirent specialties */
+    position: absolute;
+    width: 244px;
+    height: 54px;
+    left: 238px;
+    top: 877px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    /* or 129% */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #777777;
+}
+.coach_btn{
+    position: absolute;
+    width: 135px;
+    height: 40px;
+    left: 292px;
+    top: 960px;
+
+    background: #333333;
+    border-radius: 3px;
+}
+.coach_txt{
+    /* view more */
+    position: absolute;
+    width: 76px;
+    height: 16px;
+    left: 321px;
+    top: 972px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #F9F9F9;
+}
+
+.ellipse34_2{
+    /* Ellipse 34 */
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    left: 692px;
+    top: 768px;
+    border-radius: 50%;
+
+    background: #E1E1E1;
+}
+.chat {
+    /* Start a chat */
+    position: absolute;
+    width: 138px;
+    height: 28px;
+    left: 651px;
+    top: 834px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #333333;
+}
+.chat_ex{
+    /* Reaching out to your coach and describe your needs. You can schedul a call or set a meeting */
+    position: absolute;
+    width: 244px;
+    height: 54px;
+    left: 598px;
+    top: 877px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    /* or 129% */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #777777;
+}
+.chat_btn{
+    position: absolute;
+    width: 135px;
+    height: 40px;
+    left: 652px;
+    top: 960px;
+
+    background: #333333;
+    border-radius: 3px;
+}
+.chat_txt{
+    /* view more */
+    position: absolute;
+    width: 76px;
+    height: 16px;
+    left: 681px;
+    top: 972px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #F9F9F9;
+}
+
+.ellipse34_3{
+    /* Ellipse 34 */
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    left: 1052px;
+    top: 768px;
+    border-radius: 50%;
+
+    background: #E1E1E1;
+}
+.hireCoach{
+    /* Hire */
+    position: absolute;
+    width: 48px;
+    height: 28px;
+    left: 1056px;
+    top: 834px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #333333;
+}
+.hireCoach_ex{
+    /* You are good? You can go ahead and hire your coach with just a click */
+    position: absolute;
+    width: 244px;
+    height: 54px;
+    left: 958px;
+    top: 877px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    /* or 129% */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #777777;
+}
+.hireCoach_btn{
+    position: absolute;
+    width: 135px;
+    height: 40px;
+    left: 1012px;
+    top: 960px;
+
+    background: #333333;
+    border-radius: 3px;
+}
+.hireCoach_txt{
+    /* view more */
+    position: absolute;
+    width: 76px;
+    height: 16px;
+    left: 1041px;
+    top: 972px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #F9F9F9;
+}
+.middle{
+    position: absolute;
+    width: 1440px;
+    height: 438px;
+    left: 0px;
+    top: 1154px;
+
+    background: #FFE4E1;
+}
+
+.middle_h2{
+    /* Your coach is closer than you think */
+    position: absolute;
+    width: 217px;
+    height: 56px;
+    left: 238px;
+    top: 1285px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #333333;
+}
+.middle_h3{
+    position: absolute;
+    width: 474px;
+    height: 36px;
+    left: 238px;
+    top: 1357px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    /* or 129% */
+
+
+    color: #555555;
+}
+.middle_btn{
+    position: absolute;
+    width: 158px;
+    height: 48px;
+    left: 238px;
+    top: 1413px;
+
+    background: #333333;
+    border-radius: 3px;
+}
+.middle_txt{
+    /* learn more */
+
+    position: absolute;
+    width: 86px;
+    height: 16px;
+    left: 274px;
+    top: 1429px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+
+    color: #F9F9F9;
+}
+
+.picked{
+    /* Coaches just pickd for you */
+    position: absolute;
+    width: 285px;
+    height: 28px;
+    left: 238px;
+    top: 1672px;
+    
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #333333;
+}
+.imageOne{
+    position: absolute;
+    width: 309px;
+    height: 309px;
+    left: 238px;
+    top: 1740px;
+
+    background: #F0F0F0;
+    border-radius: 3px;
+}
+.imageTwo{
+    position: absolute;
+    width: 310px;
+    height: 309px;
+    left: 565px;
+    top: 1740px;
+
+    background: #F0F0F0;
+    border-radius: 3px;
+}
+.imageThree{
+    position: absolute;
+    width: 309px;
+    height: 309px;
+    left: 893px;
+    top: 1740px;
+
+    background: #F0F0F0;
+    border-radius: 3px;
+}
+
+.findCoaches{
+    /* Find coaches in your state */
+    position: absolute;
+    width: 415px;
+    height: 32px;
+    left: 238px;
+    top: 2264px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: bold;
+    /* identical to box height, or 100% */
+
+    letter-spacing: 0.05em;
+
+    color: #333333;
+}
+.ca{
+    position: absolute;
+    width: 230px;
+    height: 200px;
+    left: 238px;
+    top: 2320px;
+
+    background: #E1E1E1;
+    border-radius: 5px;
+
+}
+.city_name_ca{
+    position: absolute;
+    width: 88px;
+    height: 38px;
+    left: 309px;
+    top: 2401px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    /* or 100% */
+    
+    text-align: center;
+    letter-spacing: 0.05em;
+    /* or 100% */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+
+}
+.circle1{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 412px;
+    top: 2464px;
+    border-radius: 50%;
+    border: none;
+
+    background: #88D1A3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+}
+.arrow{
+    position: absolute;
+    left: 21%;
+    right: 2.46%;
+    top: 21%;
+    bottom: -25%;
+}
+.city_name_ny{
+    /* New York 71 coaches */
+
+
+    position: absolute;
+    width: 83px;
+    height: 38px;
+    left: 556px;
+    top: 2617px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    /* or 100% */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+
+}
+
+.mi{
+    position: absolute;
+    width: 231px;
+    height: 200px;
+    left: 482px;
+    top: 2320px;
+
+    background: #E1E1E1;
+    border-radius: 5px;
+    
+}
+.circle2{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 657px;
+    top: 2464px;
+    border-radius: 50%;
+    border: none;
+
+    background: #88D1A3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+}
+.city_name_mi{
+    /* Michigan 181coaches */
+    position: absolute;
+    width: 83px;
+    height: 38px;
+    left: 556px;
+    top: 2401px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    /* or 100% */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+
+}
+
+.fl{
+    position: absolute;
+    width: 231px;
+    height: 200px;
+    left: 727px;
+    top: 2320px;
+
+    background: #E1E1E1;
+    border-radius: 5px;
+    
+}
+.city_name_fl{
+    /* Michigan 181coaches */
+    position: absolute;
+    width: 88px;
+    height: 38px;
+    left: 799px;
+    top: 2401px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    /* or 100% */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+
+}
+.circle3{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 902px;
+    top: 2464px;
+    border-radius: 50%;
+    border: none;
+
+    background: #88D1A3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+}
+.co{
+    position: absolute;
+    width: 230px;
+    height: 200px;
+    left: 972px;
+    top: 2320px;
+
+    background: #E1E1E1;
+    border-radius: 5px;
+    
+}
+.circle4{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 1146px;
+    top: 2464px;
+    border-radius: 50%;
+    border: none;
+
+    background: #88D1A3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+}
+.circle5{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 412px;
+    top: 2680px;
+    border-radius: 50%;
+    border: none;
+
+    background: #88D1A3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+}
+.city_name_co{
+    /* Michigan 181coaches */
+    position: absolute;
+    width: 88px;
+    height: 38px;
+    left: 1043px;
+    top: 2401px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    /* or 100% */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+
+}
+.vi{
+    position: absolute;
+    width: 230px;
+    height: 200px;
+    left: 238px;
+    top: 2536px;
+
+    background: #E1E1E1;
+    border-radius: 5px;
+    
+}
+.city_name_vi{
+    /* Virginia 97 coaches */
+    position: absolute;
+    width: 79px;
+    height: 38px;
+    left: 314px;
+    top: 2617px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    /* or 100% */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+
+}
+.circle6{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 657px;
+    top: 2680px;
+    border-radius: 50%;
+    border: none;
+
+    background: #88D1A3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+}
+.newYork{
+    position: absolute;
+    width: 231px;
+    height: 200px;
+    left: 482px;
+    top: 2536px;
+
+    background: #E1E1E1;
+    border-radius: 5px;
+}
+.circle7{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 902px;
+    top: 2680px;
+    border-radius: 50%;
+    border: none;
+
+    background: #88D1A3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+}
+.hawaii{
+    position: absolute;
+    width: 231px;
+    height: 200px;
+    left: 727px;
+    top: 2536px;
+
+    background: #E1E1E1;
+    border-radius: 5px;
+
+}
+.city_name_ha{
+    /* Hawaii 54 coaches */
+    position: absolute;
+    width: 79px;
+    height: 38px;
+    left: 803px;
+    top: 2617px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    /* or 100% */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+
+}
+.circle8{
+    position: absolute;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 1146px;
+    top: 2680px;
+    border-radius: 50%;
+    border: none;
+
+    background: #88D1A3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+}
+.allState{
+    position: absolute;
+    width: 230px;
+    height: 200px;
+    left: 972px;
+    top: 2536px;
+
+    background: #E1E1E1;
+    border-radius: 5px;
+    
+}
+.subscribe_title{
+/* Subscribe to get the latest news */
+
+    position: absolute;
+    width: 382px;
+    height: 32px;
+    left: 336px;
+    top: 2936px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    /* identical to box height, or 133% */
+
+    letter-spacing: 0.05em;
+
+    color: #333333;
+}
+.city_name_all{
+    position: absolute;
+    width: 131px;
+    height: 38px;
+    left: 1022px;
+    top: 2617px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    /* or 100% */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #FFFFFF;
+
+}
+.subscribe_input{
+    position: absolute;
+    width: 543px;
+    height: 48px;
+    left: 336px;
+    top: 2980px;
+    border: none;
+    
+    background: #F2F2F2;
+}
+.subscribe_btn{
+    position: absolute;
+    width: 225px;
+    height: 48px;
+    left: 879px;
+    top: 2980px;
+    border: none;
+
+    background: #555555;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.subscribe_btn_txt{
+    /* Subscribe now */
+    position: absolute;
+    width: 118px;
+    height: 18px;
+    left: 932px;
+    top: 2995px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    /* identical to box height, or 129% */
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.divide_line1{
+    position: absolute;
+    width: 1160px;
+    height: 1px;
+    left: 140px;
+    top: 3191px;
+
+    background: #DADADA;
+}
+
+.subscribe_block{
+    position: absolute;
+width: 1440px;
+height: 376px;
+left: 0px;
+top: 2816px;
+
+background: 	#FFE4E1;
+}
+
+.modal{
+    position: absolute;
+    width: 1440px;
+    height: 578px;
+    left: 0px;
+    top: 576px;
+
+    background: #FDF5E6;
+}
+.divide_line2{
+    position: absolute;
+    width: 1160px;
+    height: 1px;
+    left: 140px;
+    top: 3440px;
+
+    background: #E1E1E1;
+}
+.company{
+    /* © 2021 Company, Inc */
+    position: absolute;
+    width: 146px;
+    height: 14px;
+    left: 140px;
+    top: 3485px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: 0.05em;
+
+    color: #777777;
+}
+.about_career{
+    /* About us Career Press Blog */
+    position: absolute;
+    width: 251px;
+    height: 14px;
+    left: 594px;
+    top: 3485px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: 0.05em;
+
+    color: #777777;
+}
+.discover{
+    position: absolute;
+    width: 118px;
+    height: 18px;
+    left: 607px;
+    top: 3246px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 18px;
+    /* identical to box height, or 100% */
+
+    letter-spacing: 0.05em;
+
+    color: #FF9387;
+}
+.link{
+    
+    /* Link here Link here Link here Link here */
+
+    position: absolute;
+    width: 200px;
+    height: 92px;
+    left: 607px;
+    top: 3280px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    
+    /* or 100% */
+
+    letter-spacing: 0.05em;
+
+    color: #555555;
+
+}

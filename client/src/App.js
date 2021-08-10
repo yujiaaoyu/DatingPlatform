@@ -16,14 +16,21 @@ import {
 //components
 
 import Dashboard from './components/dashboard/Dashboard';
-import Login from './components/Login';
-import Register from './components/Register';
+import Login from './components/login/Login';
+import Register from './components/register/Register';
 import EditProfile from './components/editProfile/EditProfile';
-import ResetPassword from './components/ResetPassword';
-import Upload from './components/editProfile/Upload';
-import Coach from './components/Coach';
-import ConfirmResetPassword from './components/ConfirmResetPassword';
-import Landing from './components/Landing';
+import ResetPassword from './components/resetPassword/ResetPassword';
+import Upload from './components/upload_profile_images/Upload';
+import ConfirmResetPassword from './components/ConfirmResetPassword/ConfirmResetPassword';
+import Landing from './components/landing/Landing';
+import Images from './components/PhotoGallery/Image';
+
+import EmptyPage from './components/page_empty/EmptyPage';
+import Settings from './components/settings/Settings';
+import Become from './components/coach/become/become';
+import CreateCoach from './components/coach/createCoach/createCoach';
+import Home from './components/Home/Home.js';
+
 
 toast.configure();
 
@@ -35,6 +42,7 @@ function App() {
     setIsAuthenticated(boolean);
   };
 
+  // Check authentication
   async function isAuth() {
     try {
       
@@ -57,31 +65,33 @@ function App() {
     isAuth();
   });
 
+ 
   
   return (
     <Fragment>
       <Router>
-        <div className="container">
+        <div>
           <Switch>
           <Route exact path = "/" render={props => !isAuthenticated ? <Landing {...props}/> : <Redirect to="/dashboard" /> } />
             <Route exact path = "/login" render={props => !isAuthenticated ? <Login {...props} setAuth={setAuth} /> : <Redirect to="/dashboard" /> } />
             <Route exact path = "/register" render={props => !isAuthenticated ? <Register {...props} setAuth={setAuth} /> : <Redirect to="/dashboard"/> }/>
             <Route exact path = "/dashboard" render={props => isAuthenticated ? (<Dashboard {...props} setAuth={setAuth} />) : (<Redirect to="/login"/>) }/> 
             <Route exact path = "/editProfile" render={props => isAuthenticated ? (<EditProfile {...props} setAuth={setAuth} />) : (<Redirect to="/login"/>) }/> 
-            <Route exact path = "/reset-password" render={props => isAuthenticated ? (<ResetPassword {...props} setAuth={setAuth} />) : (<Redirect to="/login"/>) }/> 
             <Route exact path = "/upload" render={props => isAuthenticated ? <Upload {...props} setAuth={setAuth} /> : <Redirect to="/login"/>}/> 
-            <Route exact path = "/confirm-reset-password" /><ConfirmResetPassword/>
+            <Route exact path = "/home" render={props => isAuthenticated ? <Home {...props} setAuth={setAuth} /> : <Redirect to="/login"/>}/> 
+            <Route exact path = "/images" render={props => isAuthenticated ? <Images {...props} setAuth={setAuth} /> : <Redirect to="/login"/>}/> 
+            <Route exact path = "/coach" render={props => isAuthenticated ? <CreateCoach {...props} setAuth={setAuth} /> : <Redirect to="/login"/>}/> 
+            {/* <Route exact path = "/pages" render={props => isAuthenticated ? <EmptyPage {...props} setAuth={setAuth} /> : <Redirect to="/login"/>}/>  */}
+            {/* <Route exact path = "/coach" render={props => isAuthenticated ? <Coach {...props} setAuth={setAuth} /> : <Redirect to="/login"/>}/>  */}
+            <Route exact path = "/reset-password"><ResetPassword/> </Route>
+            <Route exact path = "/confirm-reset-password"><ConfirmResetPassword /></Route>
+            <Route exact path = "/settings"><Settings /></Route>
+            <Route exact path = "/become_a_coach"><Become /></Route>
+            {/* <Router exact path = "/pages"><EmptyPage setAuth={setAuth}/></Router> */}
           </Switch>
         </div>
       </Router>
 
-      <Router>
-      <Switch>
-      <Router path = "/coaches">
-         <Coach/>
-      </Router>
-      </Switch>
-      </Router>
       
     </Fragment>
   );

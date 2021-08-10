@@ -1,0 +1,324 @@
+
+/* group 16 */
+.find{
+    position: absolute;
+    width: 350px;
+    height: 76px;
+    left: 735px;
+    top: 128px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    letter-spacing: 0.05em;
+
+    color: #333333;
+
+}
+
+/*group14 */
+.datingApp {
+    /* Dating app */
+    position: absolute;
+    width: 47.47px;
+    height: 32.28px;
+    left: 806.11px;
+    top: 52.44px;
+
+    color: #555555;
+}
+
+.elps10 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 755px;
+    top: 48px;
+    border-radius: 50%;
+
+    background: #C4C4C4;
+    opacity: 0.5;
+}
+.elps9 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 735px;
+    top: 48px;
+    border-radius: 50%;
+
+    background: #C4C4C4;
+    opacity: 0.7;
+}
+.image{
+    /* image-svgrepo-com 1 */
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    left: 991px;
+    top: 401px;
+}
+
+.already{
+    /* Already have an account? Sign in */
+    position: absolute;
+    width: 206px;
+    height: 16px;
+    left: 237px;
+    top: 698px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #555555;
+}
+
+/* Sign up with Facebook */
+
+
+.facebook_txt{
+    position: absolute;
+    width: 142px;
+    height: 16px;
+    left: 269px;
+    top: 650px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #555555;
+}
+.facebook_btn {
+    /* Rectangle 6 */
+    position: absolute;
+    width: 351px;
+    height: 40px;
+    left: 164px;
+    top: 638px;
+
+    border: 2px solid #555555;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+}
+
+.sign_up_txt{
+    /* sign up */
+    position: absolute;
+    width: 54px;
+    height: 16px;
+    left: 313px;
+    top: 596px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    
+    color: #F9F9F9;
+}
+
+.sign_up_btn{
+    position: absolute;
+    width: 350px;
+    height: 48px;
+    left: 165px;
+    top: 580px;
+
+    background: #333333;
+    border-radius: 3px;
+    
+}
+.confirmPwd{
+    position: absolute;
+    width: 350px;
+    height: 48px;
+    left: 165px;
+    top: 467px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    border: none;
+}
+
+.confirmPwd_txt{
+    position: absolute;
+    width: 107px;
+    height: 14px;
+    left: 165px;
+    top: 448px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: #555555;
+}
+.pwd{
+    position: absolute;
+    width: 350px;
+    height: 48px;
+    left: 165px;
+    top: 380px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    border: none;
+}
+.pwd_txt{
+    position: absolute;
+    width: 62px;
+    height: 14px;
+    left: 165px;
+    top: 361px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: #555555;
+}
+.email_label{
+    position: absolute;
+    width: 42.46px;
+    height: 14px;
+    left: 165px;
+    top: 274px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: #555555;
+}
+.email_btn{
+    position: absolute;
+    width: 350px;
+    height: 48px;
+    left: 165px;
+    top: 293px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    border: none;
+}
+
+.email_txt{
+    /* example@email.com */
+    position: absolute;
+    width: 143px;
+    height: 16px;
+    left: 186.34px;
+    top: 309px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+
+    color: #777777;
+}
+.first_name_txt{
+    /* First name */
+    position: absolute;
+    width: 63px;
+    height: 14px;
+    left: 165px;
+    top: 187px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: #555555;
+}
+
+.first_name_btn{
+    position: absolute;
+    width: 160px;
+    height: 48px;
+    left: 165px;
+    top: 206px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    border: none;
+}
+
+.last_name_txt{
+    position: absolute;
+    width: 62px;
+    height: 14px;
+    left: 355px;
+    top: 187px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: #555555;
+}
+.last_name_btn{
+    position: absolute;
+    width: 160px;
+    height: 48px;
+    left: 355px;
+    top: 206px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    border: none;
+}
+
+.right{
+    /* Rectangle 9 */
+    position: absolute;
+    width: 800px;
+    height: 900px;
+    left: 640px;
+    top: 0px;
+
+    background: #F2F2F2;
+}

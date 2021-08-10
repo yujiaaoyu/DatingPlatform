@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.Navbar{
+  background-color: ;
+  width:100%;
+  height:80px;
+  font-family: Arial, Arial, Helvetica, sans-serif;
+  display:flex;
+}

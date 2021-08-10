@@ -1,0 +1,63 @@
+.label{
+    position: absolute;
+    width: 46px;
+    height: 14px;
+    left: 728px;
+    top: 510px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    letter-spacing: 0.05em;
+
+    color: #555555;
+
+}
+
+.txt{
+    /* United States */
+
+    position: absolute;
+    width: 93px;
+    height: 16px;
+    left: 566.34px;
+    top: 545px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+
+    color: #555555;
+
+}
+
+.rct{
+    /* Rectangle 8 */
+    position: absolute;
+    width: 254px;
+    height: 48px;
+    left: 728px;
+    top: 529px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+}
+
+.arrow{
+    position: absolute;
+    width: 13px;
+    height: 8px;
+    left: 783px;
+    top: 557px;
+
+    background: #333333;
+    transform: rotate(-180deg);
+}
