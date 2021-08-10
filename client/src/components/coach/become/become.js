@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from './become.module.css';
-import bookIcon from '../../../Images/books.png';
+import LoveIcon from '../../../Images/love.jpg';
 import { Link } from "react-router-dom";
 
 
@@ -39,7 +39,7 @@ const Become = ({setauth}) => {
 
     return (
         <div>
-            <img className={styles.left} src={bookIcon} alt="book_icon"/>
+            <img className={styles.left} src={LoveIcon} alt="book_icon"/>
             <div className={styles.ellipse9}/>
             <div className={styles.ellipse10}/>
             <div className={styles.datingApp}>DaitngApp</div>

@@ -83,8 +83,13 @@ router.post("/add", authorization, async (req, res) => {
         console.log(password);
 
         // add data to database
-        await pool.query("INSERT INTO coaches (email, password) VALUES ($1, $2) RETURNING *", 
-        [email, password]);
+        const exists = await pool.query("SELECT * from coaches WHERE email = $1 ", [email]);
+        
+        if (!exists.rows[0]) {
+            await pool.query("INSERT INTO coaches (email, password) VALUES ($1, $2) RETURNING *", 
+            [email, password]);
+        }
+
 
         if (first_name) {
             await pool.query("UPDATE coaches SET first_name = $1 WHERE email = $2", [first_name, email]);

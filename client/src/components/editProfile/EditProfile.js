@@ -124,9 +124,8 @@ const EditProfile = ({setAuth}) => {
         <Countries getMsg = { getCountryMsg }/>
         <Cities getMsg = { getCityMsg } />
     
-        <button className={styles.save_btn}>
-          <div className={styles.save_txt}>SAVE</div>
-        </button>  
+        <button className={styles.save_btn}/>
+        <div className={styles.save_txt}>SAVE</div>
 
       </form>
     </Fragment>

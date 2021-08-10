@@ -14,7 +14,7 @@ app.use(cors());
 
 //ROUTES//
 
-// register, login, reset-password, editProfile routes
+// register, login, editProfile routes
 app.use("/auth", require('./routes/jwtAuth'));
 
 // dashboard route
