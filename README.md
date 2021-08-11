@@ -242,32 +242,21 @@ All client-side components and .css files.
 
 ### Video Walkthrough
 
-<!-- <h4>Landing page</h4> -->
+<h4>Landing page</h4>
 
-<video width="1444" height="1319" controls>
-  <source src="landing.mov" type="video/mp4">
-</video>
+![](https://i.imgur.com/TrJe30w.gif)
 
-<!-- <h4>Register</h4> -->
-<video width="320" height="240" controls>
-  <source src="register.mov" type="video/mp4">
-</video>
+<h4>Register</h4>
+![](https://i.imgur.com/h7wUso8.gif)
 
-<!-- <h4>Log Out</h4> -->
-<video width="320" height="240" controls>
-  <source src="log_out.mov" type="video/mp4">
-</video>
+<h4>Log Out</h4>
+![](https://i.imgur.com/KYMUoVH.gif)
 
-<!-- <h4>Login, go to settings, edit account, see personal profile, photo gallery, delete images</h4> -->
-<video width="320" height="240" controls>
-  <source src="login.mov" type="video/mp4">
-</video>
+<h4>Login, go to settings, edit account, see personal profile, photo gallery, delete images</h4>
+![](https://i.imgur.com/pitAogv.gif)
 
-<!-- <h4>Edit User Profile</h4> -->
-<video width="320" height="240" controls>
-  <source src="edit_profile.mov" type="video/mp4">
-</video>
+<h4>Edit User Profile</h4>
+![](https://i.imgur.com/lrIUb2R.gif)
 
-<video width="320" height="240" controls>
-  <source src="edit_coach.mov" type="video/mp4">
-</video>
+<h4>Edit Coach Profile</h4>
+![](https://i.imgur.com/UGZszHE.gif)
