@@ -247,16 +247,27 @@ All client-side components and .css files.
 ![](https://i.imgur.com/TrJe30w.gif)
 
 <h4>Register</h4>
+
 ![](https://i.imgur.com/h7wUso8.gif)
 
 <h4>Log Out</h4>
+
 ![](https://i.imgur.com/KYMUoVH.gif)
 
 <h4>Login, go to settings, edit account, see personal profile, photo gallery, delete images</h4>
+
 ![](https://i.imgur.com/pitAogv.gif)
 
 <h4>Edit User Profile</h4>
+
 ![](https://i.imgur.com/lrIUb2R.gif)
 
 <h4>Edit Coach Profile</h4>
+
 ![](https://i.imgur.com/UGZszHE.gif)
+
+<h4>If you cannot see the gifs </h4>
+
+If you cannot see the aboving gifs, please <a href="https://drive.google.com/drive/folders/1yY846gnsQN77TxQP0_ri2QfjLk474VpG?usp=sharing">see here</a>
+
+And here is the vedio walkthrough <a href="https://drive.google.com/drive/folders/1ALTrFTJ5VS7T_3Fe_Cywa_LrxH9iA3ct?usp=sharing">see here</a>
