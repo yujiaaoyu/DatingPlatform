@@ -266,8 +266,6 @@ All client-side components and .css files.
 
 ![](https://i.imgur.com/UGZszHE.gif)
 
-<h4>If you cannot see the gifs </h4>
-
 If you cannot see the aboving gifs, please <a href="https://drive.google.com/drive/folders/1yY846gnsQN77TxQP0_ri2QfjLk474VpG?usp=sharing">see here</a>
 
-And here is the video walkthrough <a href="https://drive.google.com/drive/folders/1ALTrFTJ5VS7T_3Fe_Cywa_LrxH9iA3ct?usp=sharing">see here</a>
+And here is the video walkthrough <a href="https://drive.google.com/drive/folders/1ALTrFTJ5VS7T_3Fe_Cywa_LrxH9iA3ct?usp=sharing">click me</a>
