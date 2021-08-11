@@ -244,7 +244,7 @@ All client-side components and .css files.
 
 <!-- <h4>Landing page</h4> -->
 
-<video width="320" height="240" controls>
+<video width="1444" height="1319" controls>
   <source src="landing.mov" type="video/mp4">
 </video>
 
