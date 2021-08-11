@@ -242,32 +242,32 @@ All client-side components and .css files.
 
 ### Video Walkthrough
 
-<h4>Landing page</h4>
+<!-- <h4>Landing page</h4> -->
 
 <video width="320" height="240" controls>
   <source src="landing.mov" type="video/mp4">
 </video>
 
-<h4>Register</h4>
+<!-- <h4>Register</h4> -->
 <video width="320" height="240" controls>
   <source src="register.mov" type="video/mp4">
 </video>
 
-<h4>Log Out</h4>
+<!-- <h4>Log Out</h4> -->
 <video width="320" height="240" controls>
   <source src="log_out.mov" type="video/mp4">
 </video>
 
-<h4>Login, go to settings, edit account, see personal profile, photo gallery, delete images</h4>
+<!-- <h4>Login, go to settings, edit account, see personal profile, photo gallery, delete images</h4> -->
 <video width="320" height="240" controls>
   <source src="login.mov" type="video/mp4">
 </video>
 
-<h4>Edit User Profile</h4>
+<!-- <h4>Edit User Profile</h4> -->
 <video width="320" height="240" controls>
   <source src="edit_profile.mov" type="video/mp4">
 </video>
 
 <video width="320" height="240" controls>
-  <source src="edit_coach.mov" type="video/mp4>
+  <source src="edit_coach.mov" type="video/mp4">
 </video>
