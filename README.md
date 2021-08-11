@@ -217,10 +217,10 @@ A jwt token contains a Header, a Payload, and a Signature.
 <code>confrim-reset-password.js</code><p style='font-size:14px'>Handle request of resetting password.</p>
 
 
-<code>dashboard.js</code><span style="font-size:14px"> -get dashboard page.</span>
-<code>settings.js</code><span style="font-size:14px"> -get settings page.</span>
-<code>jwtAuth.js</code><span style="font-size:14px"> -handle request of register, login, edit profile, upload photos, add prompts, delete images, and review personal home pages.</span>
-<code>index.js</code>
+<code>dashboard.js</code><span style="font-size:14px"> -get dashboard page.</span><br>
+<code>settings.js</code><span style="font-size:14px"> -get settings page.</span><br>
+<code>jwtAuth.js</code><span style="font-size:14px"> -handle request of register, login, edit profile, upload photos, add prompts, delete images, and review personal home pages.</span><br>
+<code>index.js</code><br>
 <h5 style="color: blue">Client:</h5>
 <code>src/components</code>
 
@@ -245,22 +245,22 @@ All client-side components and .css files.
 <h4>Landing page</h4>
 
 <video width="320" height="240" controls>
-  <source src="../demo/landing.mov" type="video/mp4">
+  <source src="./demo/landing.mov" type="video/mp4">
 </video>
 
 <h4>Register</h4>
 <video width="320" height="240" controls>
-  <source src="../demo/register.mov" type="video/mp4">
+  <source src="./demo/register.mov" type="video/mp4">
 </video>
 
 <h4>Log Out</h4>
 <video width="320" height="240" controls>
-  <source src="../demo/log_out.mov" type="video/mp4">
+  <source src="./demo/log_out.mov" type="video/mp4">
 </video>
 
 <h4>Login, go to settings, edit account, see personal profile, photo gallery, delete images</h4>
 <video width="320" height="240" controls>
-  <source src="../demo/login.mov" type="video/mp4">
+  <source src="./demo/login.mov" type="video/mp4">
 </video>
 
 <h4>Edit User Profile</h4>
@@ -270,5 +270,5 @@ All client-side components and .css files.
 
 <h4>Edit Coach Profile</h4>
 <video width="320" height="240" controls>
-  <source src="../demo/edit_coach.mov" type="video/mp4">
+  <source src="./demo/edit_coach.mov" type="video/mp4">
 </video>
