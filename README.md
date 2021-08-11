@@ -245,30 +245,30 @@ All client-side components and .css files.
 <h4>Landing page</h4>
 
 <video width="320" height="240" controls>
-  <source src="demo/landing.mov" type="video/mp4">
+  <source src="/demo/landing.mov" type="video/mp4">
 </video>
 
 <h4>Register</h4>
 <video width="320" height="240" controls>
-  <source src="demo/register.mov" type="video/mp4">
+  <source src="/demo/register.mov" type="video/mp4">
 </video>
 
 <h4>Log Out</h4>
 <video width="320" height="240" controls>
-  <source src="demo/log_out.mov" type="video/mp4">
+  <source src="/demo/log_out.mov" type="video/mp4">
 </video>
 
 <h4>Login, go to settings, edit account, see personal profile, photo gallery, delete images</h4>
 <video width="320" height="240" controls>
-  <source src="demo/login.mov" type="video/mp4">
+  <source src="/demo/login.mov" type="video/mp4">
 </video>
 
 <h4>Edit User Profile</h4>
 <video width="320" height="240" controls>
-  <source src="demo/edit_profile.mov" type="video/mp4">
+  <source src="/demo/edit_profile.mov" type="video/mp4">
 </video>
 
 <h4>Edit Coach Profile</h4>
 <video width="320" height="240" controls>
-  <source src="demo/edit_coach.mov" type="video/mp4">
+  <source src="/demo/edit_coach.mov" type="video/mp4">
 </video>
