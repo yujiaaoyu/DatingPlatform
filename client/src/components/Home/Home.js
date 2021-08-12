@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './home.module.scss';
-import Navbar from '../TopNavBar/Navbar';
+import Navbar from './TopNavBar/Navbar';
 import { Fragment } from 'react';
 
 // Homw page.

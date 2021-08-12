@@ -80,7 +80,7 @@ const Upload = ({setAuth}) => {
         <Fragment>
 
             <EmptyPage />
-        <form onsubmit={handleCancle} className="form">
+        <form onSubmit={handleCancle} className="form">
             <button className={styles.cancle_rect}/>
             <p className={styles.cancle_txt}>Cancel</p>
         </form>

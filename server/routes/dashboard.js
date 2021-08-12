@@ -80,21 +80,4 @@ router.get("/", authorization, async (req, res) => {
 //     }
 // });
 
-// get personal home page
-router.get("/home", authorization, async (req, res) => {
-    try {
-        const user_id = req.user;
-        const url = await pool.query("SELECT url FROM user_images WHERE user_id = $1 RETURNING *", 
-        [user_id]);
-
-        if (url.rows.length === 0) {
-            return res.json("This user does not have an image");
-        }
-        
-    } catch (error) {
-        console.log(error.message);
-    }
-});
-
-
 module.exports = router;

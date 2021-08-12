@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 import './landing.css';
 
 // Toprated coaches
@@ -12,7 +11,7 @@ const PickedCoach = (props) => {
             <div className='card-body.text-dark'>
                 <h4 className="card-tittle-secondary">{props.title}</h4>
                 <p className="card-text text-secondary">{props.text}</p>
-                <Link to href={props.website} className="btn btn-outline-success">See More</Link>
+                <a href={props.website} className="btn btn-outline-success">See More</a>
             </div>
         </div>
 

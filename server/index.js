@@ -30,10 +30,9 @@ app.use("/reset-password", require("./routes/reset-password"));
 // confirm reset passeword  route
 app.use("/confirm-reset-password", require("./routes/confirm-reset-password"));
 
-// settings route
 app.use("/settings", require("./routes/settings"));
 
-
+app.use("/", require("./routes/landing"));
 
 app.listen(5000, () => {
     console.log("server has started on port 5000");

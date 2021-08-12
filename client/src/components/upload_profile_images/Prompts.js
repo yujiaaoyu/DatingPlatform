@@ -38,7 +38,7 @@ const Prompt = () => {
             console.log(parseRes);
     
             // parse the response
-            if (parseRes === "Added a new prompt!") {
+            if (parseRes === "Added new prompts!") {
                 toast.success(parseRes);
               } else {
                 toast.error(parseRes);

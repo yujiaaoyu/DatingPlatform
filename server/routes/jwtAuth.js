@@ -235,17 +235,34 @@ router.post("/editProfile/prompts", authorization, async (req, res) => {
     try {
         // Get prompts from the request body
         const { prompt1, prompt2, prompt3 } = req.body;
-        
-        // add data into data base
-        const newPrompt = await pool.query("INSERT INTO prompts (user_id, prompts1, prompts2, prompts3) VALUES($1, $2, $3, $4) RETURNING *", 
-        [req.user, prompt1, prompt2, prompt3]
-        );
+        // check exists
+        // If exists, update prompts, other wise, insert into the table.
+        const exist = await pool.query("SELECT * from prompts WHERE user_id = $1", [req.user]);
 
-        if (newPrompt.rows[0].length === 0) {
-            return res.json("Somthing went wrong.");
+        if (exist.rows[0]) {
+            if (prompt1) {
+                await pool.query("UPDATE prompts SET prompts1 = $1 WHERE user_id = $2", [prompt1, req.user]);
+            }
+            if (prompt2) {
+                await pool.query("UPDATE prompts SET prompts2 = $1 WHERE user_id = $2", [prompt2, req.user]);
+            }
+            if (prompt3) {
+                await pool.query("UPDATE prompts SET prompts3 = $1 WHERE user_id = $2", [prompt3, req.user]);
+            }
+            res.json("Added new prompts!")
+        } else {
+        
+            // add data into data base
+            const newPrompt = await pool.query("INSERT INTO prompts (user_id, prompts1, prompts2, prompts3) VALUES($1, $2, $3, $4) RETURNING *", 
+            [req.user, prompt1, prompt2, prompt3]
+            );
+
+            if (newPrompt.rows[0].length === 0) {
+                return res.json("Somthing went wrong.");
+            }
+            // success 
+            res.json("Added new prompts!");
         }
-        // success 
-        res.json("Added a new prompt!");
 
     } catch (error) {
         console.error(error.message);
@@ -313,7 +330,6 @@ router.delete('/images/:id', authorization, async (req, res) => {
         if (data.rows.length === 0) {
             return res.json("Something went wrong.");
         }
-
         // success
         res.json("Deleted.");
     } catch (error) {

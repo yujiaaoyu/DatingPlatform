@@ -36,7 +36,6 @@ const EmptyPage = () => {
 
             <Link to="/coach" ><div className={styles.become_coach}> Become&nbsp;a&nbsp;Coach</div></Link>
             <div className={styles.ecllipse17}/>
-            {/* <ExitToAppIcon onClick={e => logout(e)}/> </button> */}
             <div className={styles.bell_rect}/>
 
             <img src={Bell} className={styles.image_bell} alt="bell_icon"/>

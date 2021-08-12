@@ -4,7 +4,7 @@ const authorization = require("../middleware/authorization");
 // handle requst of settings page
 router.get("/", authorization, async (req, res) => {
     try {
-        console.log(req.user);
+        res.json("hello from the settings");
 
     } catch (error) {
         console.log(error);

@@ -1,7 +1,7 @@
 import React, {Fragment, useState, useEffect} from "react";
 import './image.css';
 import CloseIcon from '@material-ui/icons/Close';
-import Navbar from "../TopNavBar/Navbar";
+import Navbar from "../Home/TopNavBar/Navbar";
 
 // Photo gallery 
 const DeleteImage = ({allImages, setImagesChange, setAuth }) => {

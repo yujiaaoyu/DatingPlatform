@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { toast } from 'react-toastify';
-import { Link } from "react-router-dom";
 
 //components
 import EmptyPage from "../page_empty/EmptyPage";
@@ -15,7 +14,6 @@ const Dashboard = ({ setAuth }) => {
          {first_name: "Teresa", last_name: "Nicole", city: "Orlando", areas: "FL", personal_website:"https://google.com"}]);
     
     const getProfile = async () => {
-        
         // Send a get repuset
         try {
             const response = await fetch("http://localhost:5000/dashboard/", {
@@ -39,9 +37,9 @@ const Dashboard = ({ setAuth }) => {
     const logout = async e => {
         e.preventDefault();
         try {
-            localStorage.clear();
+            localStorage.removeItem("token");
             setAuth(false);
-            toast.success("Logged out successfully!");
+            toast.success("See you!");
             
         } catch (error) {
             console.error(error.message);
@@ -50,7 +48,7 @@ const Dashboard = ({ setAuth }) => {
 
 
     useEffect(() => {
-        getProfile();
+        getProfile();  
     },[]);
 
     return (
@@ -67,7 +65,7 @@ const Dashboard = ({ setAuth }) => {
         <div className={styles.location}>{allCoaches[0].city}&nbsp;{allCoaches[0].areas}</div>
         <button className={styles.view1}/>
         <div className={styles.view_text}>View profile</div>
-        <div className={styles.view_profile}>{allCoaches[0].about}<Link>Read more</Link></div>
+        <div className={styles.view_profile}>{allCoaches[0].about}</div>
         <div className={styles.toprated}></div>
         <p className={styles.toprated_text}>Toprated</p>
         <div className={styles.offers}></div>
@@ -79,7 +77,7 @@ const Dashboard = ({ setAuth }) => {
         <div className={styles.location2}>{allCoaches[1].city}&nbsp;{allCoaches[1].areas}</div>
         <button className={styles.view2}/>
         <div className={styles.view2_text}>View profile</div>
-        <div className={styles.view2_profile}>{allCoaches[0].about}<Link>Read more</Link></div>
+        <div className={styles.view2_profile}>{allCoaches[0].about}</div>
         <div className={styles.toprated2}></div>
         <p className={styles.toprated2_text}>Toprated</p>
         <div className={styles.offers2}></div>
@@ -91,7 +89,7 @@ const Dashboard = ({ setAuth }) => {
         <div className={styles.location3}>{allCoaches[2].city}&nbsp;{allCoaches[1].areas}</div>
         <button className={styles.view3}/>
         <div className={styles.view3_text}>View profile</div>
-        <div className={styles.view3_profile}>{allCoaches[2].about}<Link>Read more</Link></div>
+        <div className={styles.view3_profile}>{allCoaches[2].about}</div>
         <div className={styles.toprated3}></div>
         <p className={styles.toprated3_text}>Toprated</p>
         <div className={styles.offers3}></div>

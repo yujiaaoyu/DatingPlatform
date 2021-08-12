@@ -9,13 +9,14 @@ import { Link } from "react-router-dom";
 const Settings = ({setAuth}) => {
    
     const getSettings = async () => {
+        
         try {
             const response = await fetch("http://localhost:5000/settings", {
                 method: "GET",
                 headers: { token: localStorage.token }
             }); 
 
-            console.log(localStorage.token);
+            // console.log(localStorage.token);
 
             const parseRes = await response.json();
             console.log(parseRes);
@@ -34,7 +35,6 @@ const Settings = ({setAuth}) => {
     useEffect(() => {
         getSettings();
     },);
-
 
     return (
     

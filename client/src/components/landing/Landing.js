@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect }from "react";
 import { Link } from 'react-router-dom';
 import './landing.css';
 import search_img from '../../Images/search.png';
@@ -13,6 +13,26 @@ import SocialFollow from "./SocialFollow";
 // Landing page
 
 const Landing = () => {
+    const getLanding = async () => {
+        
+        try {
+
+            const res = await fetch("http://localhost:5000/", {
+                method: "GET",
+                headers: {"Content-type": "application/json"}
+            }); 
+
+            const parseRes = await res.json();
+            console.log(parseRes);
+
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
+    useEffect(() => {
+        getLanding();
+    }, );
     return (
         
         <div>

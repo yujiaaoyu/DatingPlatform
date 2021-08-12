@@ -4,7 +4,6 @@ import { toast } from 'react-toastify';
 import styles from './login.module.css';
 import Image from '../../Images/click.png';
 
-import Facebook from "../Facebook";
 // Login page.
 const Login = ({setAuth}) => {
 
