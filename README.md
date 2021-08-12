@@ -1,7 +1,7 @@
 # Datin Platform Web App (v 1.0)
 
-Author: Jiaao Yu, Li Liu
-Sponsor: Jose Alvarado
+Author: Jiaao Yu, Li Liu<br>
+Sponsor / Instructor : Jose Alvarado
 
 ## About this Project
 <p style="font-size:16px">This project involves the design and development of an application and website for use by Jose Alvarado. The application will be called ‘Milk Meets Tea’ and can serve as a one-stop platform for all of the user's dating-related services. Users can view profiles of vetted service providers and hire them. The platform will also provides a ‘Groups’ feature where users can chat with each other in private groups. </p>
@@ -48,7 +48,7 @@ http://localhost:3000
             <li>React-images</li>
         </ul>
     </li>
-    <li>Front End
+    <li>Back End
         <ul>
             <li>Node.js(JavaScript)</li>
             <li>Express</li>
@@ -59,6 +59,13 @@ http://localhost:3000
     <li>Data Base
         <ul>
             <li>PostgreSQL</li>
+        </ul>
+    </li>
+    <li>Test
+        <ul>
+            <li>Mocha</li>
+            <li>Chai</li>
+            <li>Chai-http</li>
         </ul>
     </li>
 </ul>
@@ -188,6 +195,32 @@ http://localhost:3000
 </table>
 </pre></code>
 
+<strong>Test :</strong>
+
+<pre><code>
+<table>
+<tr>
+<th>package</th>
+<th> version</th>
+</tr>
+<tr>
+<th>mocha</th>
+<th> 9.0.3</th>
+</tr>
+<tr>
+<th>chai</th>
+<th> 4.3.4</th>
+</tr>
+<tr>
+<tr>
+<th>chai-http</th>
+<th> 4.3.0</th>
+</tr>
+<tr>
+
+</table>
+</pre></code>
+
 ### Included files
 There are several files include. There are:
 
@@ -227,6 +260,63 @@ All client-side components and .css files.
 
 <h5 style="color: blue">Database</h5>
 <code>database.sql</code> <span style="font-size:14px"> -sytanx to create the database</span>
+
+### Database
+
+<p style="font-size:14px">This project uses 5 tables, the syntax to create the tables can be found in file 'database.sql'. 
+
+<table>
+<tr>
+<th> Group</th>
+<th> Tables</th>
+</tr>
+<tr>
+<th rowspan=4>users</th>
+<th> users</th>
+</tr>
+<tr>
+<tr>
+<th>user_images</th>
+</tr>
+<tr>
+<th>prompts</th>
+</tr>
+<tr>
+<tr>
+<th rowspan=4>Coaches</th>
+<th> coaches</th>
+</tr>
+<tr>
+<th>coach_images</th>
+<tr>
+
+</table>
+
+
+### Tests
+
+<h5>
+1. We use Postman to test our API.
+</h5>
+<p style="font-size:14px">
+
+Eaxmple:
+
+This is an exmple of getting data from our coaches table, when we go into dashboard page, all coaches information will be listed.
+
+![](https://i.imgur.com/hyOvkTF.png)
+
+
+</p>
+
+<h5>
+2. We use Jtest to do a simple REST test, all files can be found under the test folder.
+</h5>
+
+
+
+
+
 
 ### Wireframes
 
