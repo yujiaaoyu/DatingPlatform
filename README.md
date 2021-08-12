@@ -30,6 +30,9 @@ Sponsor / Instructor : Jose Alvarado
 4. Cd client
     i. install all dependencies
     ii. run command "npm start"
+5. create tables on your local machine (pgAdmin)
+   Don't forget to change db.js file, which contains database inforamtion 
+
 
 <pre><code>
 # Install dependencies
