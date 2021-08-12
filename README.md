@@ -1,4 +1,4 @@
-# Datin Platform Web App (v 1.0)
+# Dating Platform Web App (v 1.0)
 
 Author: Jiaao Yu, Li Liu<br>
 Sponsor / Instructor : Jose Alvarado
@@ -22,6 +22,14 @@ Sponsor / Instructor : Jose Alvarado
 
 ### How to use?
 
+1. Clone the repo
+2. Open terminal, cd into the repo of this project
+3. Cd server
+    i. install all dependencies
+    ii. run command " nodemon start"
+4. Cd client
+    i. install all dependencies
+    ii. run command "npm start"
 
 <pre><code>
 # Install dependencies
@@ -271,7 +279,7 @@ All client-side components and .css files.
 <th> Tables</th>
 </tr>
 <tr>
-<th rowspan=4>users</th>
+<th rowspan=4>Users</th>
 <th> users</th>
 </tr>
 <tr>
@@ -302,7 +310,7 @@ All client-side components and .css files.
 
 Eaxmple:
 
-This is an exmple of getting data from our coaches table, when we go into dashboard page, all coaches information will be listed.
+This is an exemple of getting data from our coaches table, when we go into the dashboard page, all coaches information will be listed.
 
 ![](https://i.imgur.com/hyOvkTF.png)
 
@@ -310,7 +318,7 @@ This is an exmple of getting data from our coaches table, when we go into dashbo
 </p>
 
 <h5>
-2. We use Jtest to do a simple REST test, all files can be found under the test folder.
+2. We use Mocha to do a simple REST test, all files can be found under the test folder.
 </h5>
 
 
