@@ -1,17 +1,17 @@
 # Dating Platform Web App (v 1.0)
 
 Author: Jiaao Yu, Li Liu<br>
-Sponsor / Instructor : Jose Alvarado
+Sponsor/Instructor : Jose Alvarado
 
 ## About this Project
 <p style="font-size:16px">This project involves the design and development of an application and website for use by Jose Alvarado. The application will be called ‘Milk Meets Tea’ and can serve as a one-stop platform for all of the user's dating-related services. Users can view profiles of vetted service providers and hire them. The platform will also provides a ‘Groups’ feature where users can chat with each other in private groups. </p>
 
 
-### Flow Diagram
+## Flow Diagram
 ![](https://i.imgur.com/GblHCKe.jpg)
 
 
-### Features
+## Features
 
 <li>Sign Up/ Login</li>
 <Li>Edit Profiles, uploads profile images, and add dating prompts</Li>
@@ -20,7 +20,9 @@ Sponsor / Instructor : Jose Alvarado
 <Li>Reset password and email</Li>
 
 
-### How to use?
+## How to use?
+
+### Instructions
 
 1. Clone the repo
 2. Open terminal, cd into the repo of this project
@@ -232,7 +234,8 @@ http://localhost:3000
 </table>
 </pre></code>
 
-### Included files
+## Included files
+### Source files
 There are several files include. There are:
 
 <h5 style="color: blue">Server:</h5>
@@ -272,8 +275,8 @@ All client-side components and .css files.
 <h5 style="color: blue">Database</h5>
 <code>database.sql</code> <span style="font-size:14px"> -sytanx to create the database</span>
 
-### Database
-
+## Database
+<h4>We use pgAdmin to create our database and tables.</h4>
 <p style="font-size:14px">This project uses 5 tables, the syntax to create the tables can be found in file 'database.sql'. 
 
 <table>
@@ -304,11 +307,11 @@ All client-side components and .css files.
 </table>
 
 
-### Tests
+## Tests
 
-<h5>
+<h4>
 1. We use Postman to test our API.
-</h5>
+</h4>
 <p style="font-size:14px">
 
 Eaxmple:
@@ -320,23 +323,23 @@ This is an exemple of getting data from our coaches table, when we go into the d
 
 </p>
 
-<h5>
+<h4>
 2. We use Mocha to do a simple REST test, all files can be found under the test folder.
-</h5>
+</h4>
 
 
 
 
 
 
-### Wireframes
+## Wireframes
 
 <p style="font-size:14px">This project follows the wiframe:
 <a href="https://www.figma.com/file/sJ8rpAsBNrpgwUclTPd1un/Wireframes?node-id=147%3A99" target="_blank">See wirefames!</a>
 
 
 
-### Video Walkthrough
+## Video Walkthrough
 
 <h4>Landing page</h4>
 
@@ -362,6 +365,6 @@ This is an exemple of getting data from our coaches table, when we go into the d
 
 ![](https://i.imgur.com/UGZszHE.gif)
 
-If you cannot see the aboving gifs, please <a href="https://drive.google.com/drive/folders/1yY846gnsQN77TxQP0_ri2QfjLk474VpG?usp=sharing">see here</a>
+If you cannot see the aboving gifs, please <a href="https://drive.google.com/drive/folders/1yY846gnsQN77TxQP0_ri2QfjLk474VpG?usp=sharing">see here</a>.
 
-And here is the video walkthrough <a href="https://drive.google.com/drive/folders/1ALTrFTJ5VS7T_3Fe_Cywa_LrxH9iA3ct?usp=sharing">click me</a>
+And here is the video walkthrough, <a href="https://drive.google.com/drive/folders/1ALTrFTJ5VS7T_3Fe_Cywa_LrxH9iA3ct?usp=sharing">click me</a>.
