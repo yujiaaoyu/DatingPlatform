@@ -14,19 +14,6 @@ CREATE TABLE users(
     city VARCHAR(30)
 );
 
-CREATE TABLE user_details(
-   id uuid PRIMARY KEY DEFAULT
-   uuid_generate_v4(),
-   user_id uuid,
-   jobtitle VARCHAR(30),
-   company VARCHAR(50),
-   university VARCHAR(100),
-   height number,
-   ethinicity VARCHAR(50),
-   religion VARCHAR(50)
-);
-
-
 -- table user_images
 CREATE TABLE user_images(
    image_id uuid PRIMARY KEY DEFAULT
@@ -34,17 +21,6 @@ CREATE TABLE user_images(
    user_id uuid,
    url VARCHAR(255) NOT NULL
 );
-
-
--- table todoItems
- CREATE TABLE todoItems(
-    todo_id uuid,
-    uuid_generate_v4(),
-    user_id UUID,
-    description VARCHAR(255) NOT NULL,
-    PRIMARY KEY (todo_id),
-    FOREIGN KEY (user_id) REFERENCES users(user_id)
- );
 
 -- table prompts
  CREATE TABLE prompts(
