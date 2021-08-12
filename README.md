@@ -188,11 +188,6 @@ http://localhost:3000
 </table>
 </pre></code>
 
-
-<pre><code>
-[lliu78@hellosold cloudstor]$ <span style="color:green">go run client/main.go 192.168.122.210:9998 get hello.txt</span>
-</code></pre>
-
 ### Included files
 There are several files include. There are:
 

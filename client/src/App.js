@@ -30,6 +30,7 @@ import Settings from './components/settings/Settings';
 import Become from './components/coach/become/become';
 import CreateCoach from './components/coach/createCoach/createCoach';
 import Home from './components/Home/Home.js';
+import Recommend from './components/coach/recommend';
 
 
 toast.configure();
@@ -75,18 +76,20 @@ function App() {
           <Route exact path = "/" render={props => !isAuthenticated ? <Landing {...props}/> : <Redirect to="/dashboard" /> } />
             <Route exact path = "/login" render={props => !isAuthenticated ? <Login {...props} setAuth={setAuth} /> : <Redirect to="/dashboard" /> } />
             <Route exact path = "/register" render={props => !isAuthenticated ? <Register {...props} setAuth={setAuth} /> : <Redirect to="/dashboard"/> }/>
-            <Route exact path = "/dashboard" render={props => isAuthenticated ? (<Dashboard {...props} setAuth={setAuth} />) : (<Redirect to="/login"/>) }/> 
-            <Route exact path = "/editProfile" render={props => isAuthenticated ? (<EditProfile {...props} setAuth={setAuth} />) : (<Redirect to="/login"/>) }/> 
-            <Route exact path = "/upload" render={props => isAuthenticated ? <Upload {...props} setAuth={setAuth} /> : <Redirect to="/login"/>}/> 
-            <Route exact path = "/home" render={props => isAuthenticated ? <Home {...props} setAuth={setAuth} /> : <Redirect to="/login"/>}/> 
-            <Route exact path = "/images" render={props => isAuthenticated ? <Images {...props} setAuth={setAuth} /> : <Redirect to="/login"/>}/> 
-            <Route exact path = "/coach" render={props => isAuthenticated ? <CreateCoach {...props} setAuth={setAuth} /> : <Redirect to="/login"/>}/> 
+            <Route exact path = "/dashboard" render={props => isAuthenticated ? (<Dashboard {...props} setAuth={setAuth} />) : (<Redirect to="/"/>) }/> 
+            <Route exact path = "/editProfile" render={props => isAuthenticated ? (<EditProfile {...props} setAuth={setAuth} />) : (<Redirect to="/"/>) }/> 
+            <Route exact path = "/upload" render={props => isAuthenticated ? <Upload {...props} setAuth={setAuth} /> : <Redirect to="/"/>}/> 
+            <Route exact path = "/home" render={props => isAuthenticated ? <Home {...props} setAuth={setAuth} /> : <Redirect to="/"/>}/> 
+            <Route exact path = "/images" render={props => isAuthenticated ? <Images {...props} setAuth={setAuth} /> : <Redirect to="/"/>}/> 
+            <Route exact path = "/coach" render={props => isAuthenticated ? <CreateCoach {...props} setAuth={setAuth} /> : <Redirect to="/"/>}/> 
             {/* <Route exact path = "/pages" render={props => isAuthenticated ? <EmptyPage {...props} setAuth={setAuth} /> : <Redirect to="/login"/>}/>  */}
             {/* <Route exact path = "/coach" render={props => isAuthenticated ? <Coach {...props} setAuth={setAuth} /> : <Redirect to="/login"/>}/>  */}
             <Route exact path = "/reset-password"><ResetPassword/> </Route>
             <Route exact path = "/confirm-reset-password"><ConfirmResetPassword /></Route>
             <Route exact path = "/settings"><Settings /></Route>
             <Route exact path = "/become_a_coach"><Become /></Route>
+            <Route exact path = "/myCoaches"><Recommend /></Route>
+
             {/* <Router exact path = "/pages"><EmptyPage setAuth={setAuth}/></Router> */}
           </Switch>
         </div>
