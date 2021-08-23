@@ -105,7 +105,7 @@ router.post("/login", validInfo, async (req, res) => {
 
 // Edit Profile 
 
-router.post("/editProfile/add", validInfo, async (req, res) => {
+router.post("/editProfile/add", validInfo, async (req, res) => {// put
     try {
 
         //req.header has the token

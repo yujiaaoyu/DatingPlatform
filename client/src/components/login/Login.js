@@ -4,6 +4,8 @@ import { toast } from 'react-toastify';
 import styles from './login.module.css';
 import Image from '../../Images/click.png';
 
+
+
 // Login page.
 const Login = ({setAuth}) => {
 
